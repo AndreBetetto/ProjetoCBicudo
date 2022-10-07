@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ExemploBanco72B
 {
     public partial class frmSplash: Form
@@ -17,10 +18,16 @@ namespace ExemploBanco72B
             InitializeComponent();
         }
 
-        private void frmSplash_Load(object sender, EventArgs e)
+        private async void frmSplash_Load(object sender, EventArgs e)
         {
-            
-
+            int contagem = 0;
+            do
+            {
+                await Task.Delay(30);
+                pgbCarrega.Value++;
+                contagem++;
+            }while(contagem < 100);
+             this.Close();
         }
     }
 }

@@ -45,7 +45,10 @@ namespace ExemploBanco72B
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Visible = false;
+            frmLogin login = new frmLogin();
+            login.ShowDialog();
+            this.Visible = true;
         }
     }
 }

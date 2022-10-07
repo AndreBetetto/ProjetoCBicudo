@@ -21,12 +21,21 @@ namespace ExemploBanco72B
         private void btnLogar_Click(object sender, EventArgs e)
         {
             LoginOK = true;
+            this.Close();
         }
 
         private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
         {
             if(LoginOK == false)
             e.Cancel = true;
+        }
+
+        private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmNaoCadastrado splash = new frmNaoCadastrado();
+            splash.ShowDialog();
+            this.Visible = true;
         }
     }
 }

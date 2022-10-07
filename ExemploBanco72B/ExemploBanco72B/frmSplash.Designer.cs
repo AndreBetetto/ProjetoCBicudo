@@ -28,7 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.pgbCarrega = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
+            // 
+            // pgbCarrega
+            // 
+            this.pgbCarrega.BackColor = System.Drawing.SystemColors.Control;
+            this.pgbCarrega.Location = new System.Drawing.Point(12, 165);
+            this.pgbCarrega.Name = "pgbCarrega";
+            this.pgbCarrega.Size = new System.Drawing.Size(560, 17);
+            this.pgbCarrega.TabIndex = 0;
             // 
             // frmSplash
             // 
@@ -37,6 +46,7 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(584, 184);
             this.ControlBox = false;
+            this.Controls.Add(this.pgbCarrega);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmSplash";
@@ -49,5 +59,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.ProgressBar pgbCarrega;
     }
 }
