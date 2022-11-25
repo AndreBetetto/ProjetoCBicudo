@@ -352,3 +352,4 @@ C:\Users\jairs\Desktop\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B
 C:\Users\jairs\Desktop\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.exe
 C:\Users\jairs\Desktop\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.pdb
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.Lanches.resources
+C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.Finalizacao.resources

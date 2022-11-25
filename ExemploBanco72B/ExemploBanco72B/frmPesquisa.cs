@@ -9,12 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Npgsql;
 
-
 namespace ExemploBanco72B
 {
     public partial class frmPesquisa : Form
     {
-
         private NpgsqlConnection cn = new NpgsqlConnection();
         private string stringConexao = "server = pgsql.projetoscti.com.br;" +
                  "database = projetoscti13; port=5432; " +

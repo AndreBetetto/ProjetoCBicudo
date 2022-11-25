@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
-            "Pão francês"}, -1, System.Drawing.Color.Empty, System.Drawing.Color.Empty, new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))));
-            this.listView1 = new System.Windows.Forms.ListView();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -47,7 +44,6 @@
             this.comboPro = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.comboPao = new System.Windows.Forms.ComboBox();
-            this.radLanche3 = new System.Windows.Forms.RadioButton();
             this.radLanche2 = new System.Windows.Forms.RadioButton();
             this.radLanche1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
@@ -65,23 +61,15 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnFinalizar = new System.Windows.Forms.Button();
+            this.dgvPesquisa = new System.Windows.Forms.DataGridView();
+            this.dgvPesquisa2 = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
-            listViewItem1});
-            this.listView1.Location = new System.Drawing.Point(304, 321);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(259, 175);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -95,14 +83,13 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.radLanche3);
             this.groupBox1.Controls.Add(this.radLanche2);
             this.groupBox1.Controls.Add(this.radLanche1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboLanche);
             this.groupBox1.Location = new System.Drawing.Point(27, 57);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(265, 439);
+            this.groupBox1.Size = new System.Drawing.Size(265, 450);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lanche";
@@ -135,8 +122,9 @@
             this.btnMontar.Name = "btnMontar";
             this.btnMontar.Size = new System.Drawing.Size(220, 23);
             this.btnMontar.TabIndex = 3;
-            this.btnMontar.Text = "Montar e adicionar ao pedido";
+            this.btnMontar.Text = "Adicionar à lista de lanches";
             this.btnMontar.UseVisualStyleBackColor = true;
+            this.btnMontar.Click += new System.EventHandler(this.btnMontar_Click);
             // 
             // label8
             // 
@@ -174,6 +162,7 @@
             // 
             // comboMol
             // 
+            this.comboMol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMol.FormattingEnabled = true;
             this.comboMol.Location = new System.Drawing.Point(105, 210);
             this.comboMol.Name = "comboMol";
@@ -182,6 +171,7 @@
             // 
             // comboSal
             // 
+            this.comboSal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboSal.FormattingEnabled = true;
             this.comboSal.Location = new System.Drawing.Point(105, 183);
             this.comboSal.Name = "comboSal";
@@ -199,6 +189,7 @@
             // 
             // comboLat
             // 
+            this.comboLat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLat.FormattingEnabled = true;
             this.comboLat.Location = new System.Drawing.Point(105, 156);
             this.comboLat.Name = "comboLat";
@@ -216,6 +207,7 @@
             // 
             // comboPro
             // 
+            this.comboPro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboPro.FormattingEnabled = true;
             this.comboPro.Location = new System.Drawing.Point(105, 127);
             this.comboPro.Name = "comboPro";
@@ -233,31 +225,23 @@
             // 
             // comboPao
             // 
+            this.comboPao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboPao.FormattingEnabled = true;
             this.comboPao.Location = new System.Drawing.Point(105, 100);
             this.comboPao.Name = "comboPao";
             this.comboPao.Size = new System.Drawing.Size(121, 21);
             this.comboPao.TabIndex = 1;
             // 
-            // radLanche3
-            // 
-            this.radLanche3.AutoSize = true;
-            this.radLanche3.Location = new System.Drawing.Point(11, 66);
-            this.radLanche3.Name = "radLanche3";
-            this.radLanche3.Size = new System.Drawing.Size(183, 17);
-            this.radLanche3.TabIndex = 5;
-            this.radLanche3.Text = "Montar um lanche personalizados";
-            this.radLanche3.UseVisualStyleBackColor = true;
-            // 
             // radLanche2
             // 
             this.radLanche2.AutoSize = true;
             this.radLanche2.Location = new System.Drawing.Point(11, 43);
             this.radLanche2.Name = "radLanche2";
-            this.radLanche2.Size = new System.Drawing.Size(208, 17);
+            this.radLanche2.Size = new System.Drawing.Size(118, 17);
             this.radLanche2.TabIndex = 4;
-            this.radLanche2.Text = "Escolher um lanche dos mais vendidos";
+            this.radLanche2.Text = "Escolher um lanche";
             this.radLanche2.UseVisualStyleBackColor = true;
+            this.radLanche2.CheckedChanged += new System.EventHandler(this.radLanche2_CheckedChanged);
             // 
             // radLanche1
             // 
@@ -270,18 +254,21 @@
             this.radLanche1.TabStop = true;
             this.radLanche1.Text = "Sem lanche";
             this.radLanche1.UseVisualStyleBackColor = true;
+            this.radLanche1.CheckedChanged += new System.EventHandler(this.radLanche1_CheckedChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(232, 13);
+            this.label2.Size = new System.Drawing.Size(106, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Selecione um de nossos lanches mais vendidos";
+            this.label2.Text = "Selecione um lanche";
             // 
             // comboLanche
             // 
+            this.comboLanche.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboLanche.Enabled = false;
             this.comboLanche.FormattingEnabled = true;
             this.comboLanche.Location = new System.Drawing.Point(11, 120);
             this.comboLanche.Name = "comboLanche";
@@ -312,6 +299,8 @@
             // 
             // comboAcom
             // 
+            this.comboAcom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboAcom.Enabled = false;
             this.comboAcom.FormattingEnabled = true;
             this.comboAcom.Location = new System.Drawing.Point(9, 120);
             this.comboAcom.Name = "comboAcom";
@@ -327,6 +316,7 @@
             this.radAcom2.TabIndex = 6;
             this.radAcom2.Text = "Escolher um acompanhamento";
             this.radAcom2.UseVisualStyleBackColor = true;
+            this.radAcom2.CheckedChanged += new System.EventHandler(this.radAcom2_CheckedChanged);
             // 
             // radAcom1
             // 
@@ -339,6 +329,7 @@
             this.radAcom1.TabStop = true;
             this.radAcom1.Text = "Sem acompanhamento";
             this.radAcom1.UseVisualStyleBackColor = true;
+            this.radAcom1.CheckedChanged += new System.EventHandler(this.radAcom1_CheckedChanged);
             // 
             // groupBox4
             // 
@@ -364,6 +355,8 @@
             // 
             // comboSobre
             // 
+            this.comboSobre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboSobre.Enabled = false;
             this.comboSobre.FormattingEnabled = true;
             this.comboSobre.Location = new System.Drawing.Point(9, 120);
             this.comboSobre.Name = "comboSobre";
@@ -379,6 +372,7 @@
             this.radSobre2.TabIndex = 8;
             this.radSobre2.Text = "Escolher uma sobremesa";
             this.radSobre2.UseVisualStyleBackColor = true;
+            this.radSobre2.CheckedChanged += new System.EventHandler(this.radSobre2_CheckedChanged);
             // 
             // radSobre1
             // 
@@ -391,19 +385,21 @@
             this.radSobre1.TabStop = true;
             this.radSobre1.Text = "Sem sobremesa";
             this.radSobre1.UseVisualStyleBackColor = true;
+            this.radSobre1.CheckedChanged += new System.EventHandler(this.radSobre1_CheckedChanged);
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(723, 380);
+            this.btnExcluir.Location = new System.Drawing.Point(530, 397);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(111, 23);
             this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir pedido";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(723, 324);
+            this.btnLogout.Location = new System.Drawing.Point(352, 397);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(111, 23);
             this.btnLogout.TabIndex = 6;
@@ -412,18 +408,40 @@
             // 
             // btnFinalizar
             // 
-            this.btnFinalizar.Location = new System.Drawing.Point(723, 434);
+            this.btnFinalizar.Enabled = false;
+            this.btnFinalizar.Location = new System.Drawing.Point(723, 397);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(111, 23);
             this.btnFinalizar.TabIndex = 7;
             this.btnFinalizar.Text = "Finalizar pedido";
             this.btnFinalizar.UseVisualStyleBackColor = true;
+            this.btnFinalizar.Click += new System.EventHandler(this.btnFinalizar_Click);
+            // 
+            // dgvPesquisa
+            // 
+            this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPesquisa.Location = new System.Drawing.Point(298, 289);
+            this.dgvPesquisa.Name = "dgvPesquisa";
+            this.dgvPesquisa.Size = new System.Drawing.Size(19, 136);
+            this.dgvPesquisa.TabIndex = 8;
+            this.dgvPesquisa.Visible = false;
+            // 
+            // dgvPesquisa2
+            // 
+            this.dgvPesquisa2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPesquisa2.Location = new System.Drawing.Point(299, 431);
+            this.dgvPesquisa2.Name = "dgvPesquisa2";
+            this.dgvPesquisa2.Size = new System.Drawing.Size(18, 76);
+            this.dgvPesquisa2.TabIndex = 9;
+            this.dgvPesquisa2.Visible = false;
             // 
             // Lanches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(850, 519);
+            this.Controls.Add(this.dgvPesquisa2);
+            this.Controls.Add(this.dgvPesquisa);
             this.Controls.Add(this.btnFinalizar);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnExcluir);
@@ -431,9 +449,9 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.listView1);
             this.Name = "Lanches";
-            this.Text = "Lanches";
+            this.Text = "Pedido";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lanches_FormClosing);
             this.Load += new System.EventHandler(this.Lanches_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -443,18 +461,17 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radLanche3;
         private System.Windows.Forms.RadioButton radLanche2;
         private System.Windows.Forms.RadioButton radLanche1;
         private System.Windows.Forms.Label label2;
@@ -485,5 +502,7 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnFinalizar;
+        private System.Windows.Forms.DataGridView dgvPesquisa;
+        private System.Windows.Forms.DataGridView dgvPesquisa2;
     }
 }

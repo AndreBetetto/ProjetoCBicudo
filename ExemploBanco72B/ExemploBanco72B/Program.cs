@@ -16,6 +16,7 @@ namespace ExemploBanco72B
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Lanches());
             Application.Run(new frmMenu());
         }
     }

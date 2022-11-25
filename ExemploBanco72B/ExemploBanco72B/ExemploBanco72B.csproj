@@ -141,6 +141,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Finalizacao.resx">
+      <DependentUpon>Finalizacao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastro_ingredientes.resx">
       <DependentUpon>frmCadastro_ingredientes.cs</DependentUpon>
     </EmbeddedResource>
