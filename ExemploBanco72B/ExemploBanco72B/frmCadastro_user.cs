@@ -51,7 +51,7 @@ namespace ExemploBanco72B
                 }
                 if (novo)
                 {
-                    sql = "insert into lanchonete_usuario (cpf, email, nome, datanasc, cep, telefone, senha, adm) " + "values (@cpf, @email, @nome, @datanasc, @cep, @telefone, @senha, @adm)";
+                    sql = "insert into lanchonete_usuario (cpf, email, nome, datanasc, cep, telefone, senha, adm) " + "values (@cpf, @email, @nome, current_timestamp, @cep, @telefone, @senha, TRUE)";                 
                 }
                 else
                 {
@@ -65,7 +65,7 @@ namespace ExemploBanco72B
                 cmd.Parameters.AddWithValue("@cpf", txtCPF.Text);
                 cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@nome", txtNone.Text);
-                cmd.Parameters.AddWithValue("@datanasc", 2000/01/01);
+                cmd.Parameters.AddWithValue("@datanasc", "2000-01-01);
                 cmd.Parameters.AddWithValue("@cep", txtCEP.Text);
                 cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
                 cmd.Parameters.AddWithValue("@senha", txtSenha.Text);
@@ -73,7 +73,7 @@ namespace ExemploBanco72B
                     cmd.Parameters.AddWithValue("@adm", "TRUE");
                 else
                     cmd.Parameters.AddWithValue("@adm", "FALSE");
-                   
+                testes.Text = sql;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Os dados do fabricante foram salvos com sucesso",
                         "Cadastro do fabricante", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -128,18 +128,29 @@ namespace ExemploBanco72B
 
         private void frmCadastro_user_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(0, 48, 73);
-            
-
-            this.lblCSenha.ForeColor = Color.FromArgb(247, 127, 0);
-            this.lblAdm.ForeColor = Color.FromArgb(247, 127, 0);
-            this.label1.ForeColor = Color.FromArgb(247, 127, 0);
-            this.lblCEP.ForeColor = Color.FromArgb(247, 127, 0);
-            this.lblCPF.ForeColor = Color.FromArgb(247, 127, 0);
-            this.lblDataNasc.ForeColor = Color.FromArgb(247, 127, 0);
-            this.lblEmail.ForeColor = Color.FromArgb(247, 127, 0);
-            this.lblSenha.ForeColor = Color.FromArgb(247, 127, 0);
-            this.label3.ForeColor = Color.FromArgb(247, 127, 0);
+            try
+            {
+                cn.ConnectionString = stringConexao;
+                cn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao conectar com o Banco de Dados !!!" +
+                                    "\n\nMais detalhes: " + ex.Message,
+                                "Cadastro de Fabricantes",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
+            //this.BackColor = Color.FromArgb(0, 48, 73);
+            //this.lblCSenha.ForeColor = Color.FromArgb(247, 127, 0);
+            //this.lblAdm.ForeColor = Color.FromArgb(247, 127, 0);
+            //this.label1.ForeColor = Color.FromArgb(247, 127, 0);
+            //this.lblCEP.ForeColor = Color.FromArgb(247, 127, 0);
+            //this.lblCPF.ForeColor = Color.FromArgb(247, 127, 0);
+            //this.lblDataNasc.ForeColor = Color.FromArgb(247, 127, 0);
+            //this.lblEmail.ForeColor = Color.FromArgb(247, 127, 0);
+            //this.lblSenha.ForeColor = Color.FromArgb(247, 127, 0);
+            //this.label3.ForeColor = Color.FromArgb(247, 127, 0);
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DateTimePicker dtpNascimento;
             this.lbl1 = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.TextBox();
@@ -53,6 +54,8 @@
             this.radAdmsim = new System.Windows.Forms.RadioButton();
             this.lblAdm = new System.Windows.Forms.Label();
             this.radAdmnão = new System.Windows.Forms.RadioButton();
+            this.testes = new System.Windows.Forms.TextBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             dtpNascimento = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
@@ -304,11 +307,24 @@
             this.radAdmnão.Text = "não";
             this.radAdmnão.UseVisualStyleBackColor = true;
             // 
+            // testes
+            // 
+            this.testes.Location = new System.Drawing.Point(27, 358);
+            this.testes.Name = "testes";
+            this.testes.Size = new System.Drawing.Size(100, 20);
+            this.testes.TabIndex = 51;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
             // frmCadastro_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 459);
+            this.Controls.Add(this.testes);
             this.Controls.Add(this.radAdmnão);
             this.Controls.Add(this.lblAdm);
             this.Controls.Add(this.radAdmsim);
@@ -368,5 +384,7 @@
         private System.Windows.Forms.RadioButton radAdmsim;
         private System.Windows.Forms.Label lblAdm;
         private System.Windows.Forms.RadioButton radAdmnão;
+        private System.Windows.Forms.TextBox testes;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
