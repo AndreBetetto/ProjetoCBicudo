@@ -91,11 +91,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Finalizacao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Finalizacao.Designer.cs">
-      <DependentUpon>Finalizacao.cs</DependentUpon>
+    <Compile Include="frmNaoCadastrado.cs" />
+    <Compile Include="frmNaoCadastrado.Designer.cs">
+      <DependentUpon>frmNaoCadastrado.cs</DependentUpon>
     </Compile>
     <Compile Include="frmCadastro_ingredientes.cs">
       <SubType>Form</SubType>
@@ -127,17 +125,17 @@
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCad_fabricante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCad_fabricante.Designer.cs">
+      <DependentUpon>frmCad_fabricante.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmPesquisa.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmPesquisa.Designer.cs">
       <DependentUpon>frmPesquisa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Lanches.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Lanches.Designer.cs">
-      <DependentUpon>Lanches.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -153,14 +151,17 @@
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNaoCadastrado.resx">
+      <DependentUpon>frmNaoCadastrado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCad_fabricante.resx">
+      <DependentUpon>frmCad_fabricante.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmPesquisa.resx">
       <DependentUpon>frmPesquisa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Lanches.resx">
-      <DependentUpon>Lanches.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

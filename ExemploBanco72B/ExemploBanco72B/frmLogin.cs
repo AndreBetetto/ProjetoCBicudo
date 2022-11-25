@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace ExemploBanco72B
 {
     public partial class frmLogin : Form
     {
+        private NpgsqlConnection cn = new NpgsqlConnection();
+        private string stringConexao = "server = pgsql.projetoscti.com.br;" +
+                "database = projetoscti; port=5432; " +
+                "user id = projetoscti; password = gaspar";
+
         public bool LoginOK = false;
         public frmLogin()
         {
@@ -33,15 +39,9 @@ namespace ExemploBanco72B
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            frmCadastro_user splash = new frmCadastro_user();
+            frmNaoCadastrado splash = new frmNaoCadastrado();
             splash.ShowDialog();
             this.Visible = true;
-        }
-
-        private void frmLogin_Load(object sender, EventArgs e)
-        {
-            this.ControlBox = false;
-            //this.BackColor = Color.FromArgb(0, 48, 73);
         }
     }
 }
