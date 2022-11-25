@@ -83,7 +83,7 @@
             this.Controls.Add(this.btnCarregarPesquisa);
             this.Controls.Add(this.dgvPesquisa);
             this.Name = "frmPesquisa";
-            this.Text = "Exemplo Banco 72B";
+            this.Text = "Executar Scripts";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPesquisa_FormClosing);
             this.Load += new System.EventHandler(this.frmPesquisa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).EndInit();

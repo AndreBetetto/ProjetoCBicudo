@@ -40,25 +40,32 @@ namespace ExemploBanco72B
 
         private void btnCarregarPesquisa_Click(object sender, EventArgs e)
         {
-           // FAZER TRY E CATCH
-            string sql;
-            //sql = "select * from cine order by nome_fantasia";
-            sql = txtSQL.Text;
+            try 
+            {
+                string sql;
+                //sql = "select * from cine order by nome_fantasia";
+                sql = txtSQL.Text;
 
-            // Criar e configurar um objeto Command - responsável por
-            // processar comandos SQL contra a fonte de dados
-            NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                // Criar e configurar um objeto Command - responsável por
+                // processar comandos SQL contra a fonte de dados
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
 
-            // Criar um DataAdapter do comando sql contra o banco
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                // Criar um DataAdapter do comando sql contra o banco
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
 
-            // Carregar os dados do DataAdapter para o DataSet
-            DataSet ds = new DataSet();
+                // Carregar os dados do DataAdapter para o DataSet
+                DataSet ds = new DataSet();
 
-            da.Fill(ds);
+                da.Fill(ds);
 
-            dgvPesquisa.DataSource = ds.Tables[0];
-
+                dgvPesquisa.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu um erro ao executar o script" +
+                    "\n\nMais detalhes: " + ex.Message,
+                    "Scripts", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
