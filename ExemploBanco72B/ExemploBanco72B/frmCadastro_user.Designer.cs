@@ -52,13 +52,14 @@
             this.lblCSenha = new System.Windows.Forms.Label();
             this.radAdm = new System.Windows.Forms.RadioButton();
             this.lblAdm = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // lbl1
             // 
-            this.lbl1.BackColor = System.Drawing.Color.LightGray;
+            this.lbl1.BackColor = System.Drawing.Color.Transparent;
             this.lbl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl1.Location = new System.Drawing.Point(209, 9);
             this.lbl1.Name = "lbl1";
             this.lbl1.Size = new System.Drawing.Size(282, 27);
@@ -68,7 +69,7 @@
             // 
             // txtCPF
             // 
-            this.txtCPF.Location = new System.Drawing.Point(158, 120);
+            this.txtCPF.Location = new System.Drawing.Point(168, 119);
             this.txtCPF.MaxLength = 14;
             this.txtCPF.Name = "txtCPF";
             this.txtCPF.Size = new System.Drawing.Size(127, 20);
@@ -76,6 +77,7 @@
             // 
             // btnNovo
             // 
+            this.btnNovo.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNovo.Location = new System.Drawing.Point(27, 413);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(83, 34);
@@ -86,6 +88,7 @@
             // 
             // btnSalvar
             // 
+            this.btnSalvar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalvar.Location = new System.Drawing.Point(162, 413);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(83, 34);
@@ -96,6 +99,7 @@
             // 
             // btnCancelar
             // 
+            this.btnCancelar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(300, 413);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(83, 34);
@@ -106,6 +110,7 @@
             // 
             // btnExcluir
             // 
+            this.btnExcluir.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.Location = new System.Drawing.Point(430, 413);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(83, 34);
@@ -116,7 +121,7 @@
             // 
             // txtNone
             // 
-            this.txtNone.Location = new System.Drawing.Point(158, 67);
+            this.txtNone.Location = new System.Drawing.Point(168, 67);
             this.txtNone.MaxLength = 100;
             this.txtNone.Name = "txtNone";
             this.txtNone.Size = new System.Drawing.Size(412, 20);
@@ -125,25 +130,26 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(48, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 18);
+            this.label1.Size = new System.Drawing.Size(60, 18);
             this.label1.TabIndex = 29;
             this.label1.Text = "Nome:";
             // 
             // lblCPF
             // 
             this.lblCPF.AutoSize = true;
-            this.lblCPF.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCPF.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCPF.Location = new System.Drawing.Point(48, 122);
             this.lblCPF.Name = "lblCPF";
-            this.lblCPF.Size = new System.Drawing.Size(45, 18);
+            this.lblCPF.Size = new System.Drawing.Size(44, 18);
             this.lblCPF.TabIndex = 28;
             this.lblCPF.Text = "CPF:";
             // 
             // btnSair
             // 
+            this.btnSair.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSair.Location = new System.Drawing.Point(574, 413);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(83, 34);
@@ -154,7 +160,7 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(158, 93);
+            this.txtEmail.Location = new System.Drawing.Point(168, 93);
             this.txtEmail.MaxLength = 150;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(412, 20);
@@ -163,16 +169,17 @@
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmail.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmail.Location = new System.Drawing.Point(48, 95);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(52, 18);
+            this.lblEmail.Size = new System.Drawing.Size(54, 18);
             this.lblEmail.TabIndex = 37;
             this.lblEmail.Text = "Email:";
             // 
             // dtpNascimento
             // 
-            this.dtpNascimento.Location = new System.Drawing.Point(158, 156);
+            this.dtpNascimento.CalendarFont = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpNascimento.Location = new System.Drawing.Point(168, 156);
             this.dtpNascimento.Name = "dtpNascimento";
             this.dtpNascimento.Size = new System.Drawing.Size(245, 20);
             this.dtpNascimento.TabIndex = 38;
@@ -180,16 +187,16 @@
             // lblDataNasc
             // 
             this.lblDataNasc.AutoSize = true;
-            this.lblDataNasc.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDataNasc.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDataNasc.Location = new System.Drawing.Point(0, 156);
             this.lblDataNasc.Name = "lblDataNasc";
-            this.lblDataNasc.Size = new System.Drawing.Size(152, 18);
+            this.lblDataNasc.Size = new System.Drawing.Size(162, 18);
             this.lblDataNasc.TabIndex = 39;
-            this.lblDataNasc.Text = "Data de nascimento:";
+            this.lblDataNasc.Text = "Data d/ nascimento:";
             // 
             // txtCEP
             // 
-            this.txtCEP.Location = new System.Drawing.Point(158, 182);
+            this.txtCEP.Location = new System.Drawing.Point(168, 182);
             this.txtCEP.MaxLength = 9;
             this.txtCEP.Name = "txtCEP";
             this.txtCEP.Size = new System.Drawing.Size(127, 20);
@@ -198,16 +205,16 @@
             // lblCEP
             // 
             this.lblCEP.AutoSize = true;
-            this.lblCEP.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCEP.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCEP.Location = new System.Drawing.Point(48, 184);
             this.lblCEP.Name = "lblCEP";
-            this.lblCEP.Size = new System.Drawing.Size(46, 18);
+            this.lblCEP.Size = new System.Drawing.Size(44, 18);
             this.lblCEP.TabIndex = 40;
             this.lblCEP.Text = "CEP:";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(158, 209);
+            this.textBox1.Location = new System.Drawing.Point(168, 208);
             this.textBox1.MaxLength = 15;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(127, 20);
@@ -216,16 +223,16 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(34, 208);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 18);
+            this.label3.Size = new System.Drawing.Size(76, 18);
             this.label3.TabIndex = 42;
             this.label3.Text = "Telefone:";
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(158, 235);
+            this.txtSenha.Location = new System.Drawing.Point(168, 235);
             this.txtSenha.MaxLength = 25;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(127, 20);
@@ -234,16 +241,16 @@
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenha.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSenha.Location = new System.Drawing.Point(34, 234);
             this.lblSenha.Name = "lblSenha";
-            this.lblSenha.Size = new System.Drawing.Size(57, 18);
+            this.lblSenha.Size = new System.Drawing.Size(61, 18);
             this.lblSenha.TabIndex = 44;
             this.lblSenha.Text = "Senha:";
             // 
             // txtCSenha
             // 
-            this.txtCSenha.Location = new System.Drawing.Point(158, 261);
+            this.txtCSenha.Location = new System.Drawing.Point(168, 261);
             this.txtCSenha.MaxLength = 25;
             this.txtCSenha.Name = "txtCSenha";
             this.txtCSenha.Size = new System.Drawing.Size(127, 20);
@@ -252,10 +259,10 @@
             // lblCSenha
             // 
             this.lblCSenha.AutoSize = true;
-            this.lblCSenha.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCSenha.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCSenha.Location = new System.Drawing.Point(12, 260);
             this.lblCSenha.Name = "lblCSenha";
-            this.lblCSenha.Size = new System.Drawing.Size(127, 18);
+            this.lblCSenha.Size = new System.Drawing.Size(138, 18);
             this.lblCSenha.TabIndex = 46;
             this.lblCSenha.Text = "Confirmar senha:";
             // 
@@ -263,29 +270,43 @@
             // 
             this.radAdm.AutoSize = true;
             this.radAdm.Enabled = false;
+            this.radAdm.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radAdm.Location = new System.Drawing.Point(162, 309);
             this.radAdm.Name = "radAdm";
-            this.radAdm.Size = new System.Drawing.Size(57, 17);
+            this.radAdm.Size = new System.Drawing.Size(45, 17);
             this.radAdm.TabIndex = 48;
             this.radAdm.TabStop = true;
-            this.radAdm.Text = "Talvez";
+            this.radAdm.Text = "sim";
             this.radAdm.UseVisualStyleBackColor = true;
             // 
             // lblAdm
             // 
             this.lblAdm.AutoSize = true;
-            this.lblAdm.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAdm.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdm.Location = new System.Drawing.Point(30, 307);
             this.lblAdm.Name = "lblAdm";
             this.lblAdm.Size = new System.Drawing.Size(63, 18);
             this.lblAdm.TabIndex = 49;
             this.lblAdm.Text = "É adm?";
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(208, 309);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(46, 17);
+            this.radioButton1.TabIndex = 50;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "não";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // frmCadastro_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 459);
+            this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.lblAdm);
             this.Controls.Add(this.radAdm);
             this.Controls.Add(this.txtCSenha);
@@ -312,6 +333,7 @@
             this.Controls.Add(this.btnSair);
             this.Name = "frmCadastro_user";
             this.Text = "Cadastro de Usuários";
+            this.Load += new System.EventHandler(this.frmCadastro_user_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,5 +365,6 @@
         private System.Windows.Forms.Label lblCSenha;
         private System.Windows.Forms.RadioButton radAdm;
         private System.Windows.Forms.Label lblAdm;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }

@@ -33,9 +33,14 @@ namespace ExemploBanco72B
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
             this.Visible = false;
-            frmNaoCadastrado splash = new frmNaoCadastrado();
+            frmCadastro_user splash = new frmCadastro_user();
             splash.ShowDialog();
             this.Visible = true;
+        }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(0, 48, 73);
         }
     }
 }

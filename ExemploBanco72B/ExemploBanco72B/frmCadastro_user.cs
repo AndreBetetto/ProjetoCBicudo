@@ -116,5 +116,21 @@ namespace ExemploBanco72B
         {
             this.Close();
         }
+
+        private void frmCadastro_user_Load(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(0, 48, 73);
+            
+
+            this.lblCSenha.ForeColor = Color.FromArgb(247, 127, 0);
+            this.lblAdm.ForeColor = Color.FromArgb(247, 127, 0);
+            this.label1.ForeColor = Color.FromArgb(247, 127, 0);
+            this.lblCEP.ForeColor = Color.FromArgb(247, 127, 0);
+            this.lblCPF.ForeColor = Color.FromArgb(247, 127, 0);
+            this.lblDataNasc.ForeColor = Color.FromArgb(247, 127, 0);
+            this.lblEmail.ForeColor = Color.FromArgb(247, 127, 0);
+            this.lblSenha.ForeColor = Color.FromArgb(247, 127, 0);
+            this.label3.ForeColor = Color.FromArgb(247, 127, 0);
+        }
     }
 }
