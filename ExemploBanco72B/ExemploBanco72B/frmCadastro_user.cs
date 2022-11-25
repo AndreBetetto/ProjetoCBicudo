@@ -65,7 +65,7 @@ namespace ExemploBanco72B
                 cmd.Parameters.AddWithValue("@cpf", txtCPF.Text);
                 cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@nome", txtNone.Text);
-                cmd.Parameters.AddWithValue("@datanasc", "2000-01-01);
+                cmd.Parameters.AddWithValue("@datanasc", "2000-01-01");
                 cmd.Parameters.AddWithValue("@cep", txtCEP.Text);
                 cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
                 cmd.Parameters.AddWithValue("@senha", txtSenha.Text);
