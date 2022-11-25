@@ -251,7 +251,6 @@ C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\o
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmLogin.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmMenu.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmSplash.resources
-C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmCad_fabricante.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmPesquisa.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.Properties.Resources.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.csproj.GenerateResource.cache

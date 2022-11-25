@@ -31,9 +31,7 @@
             this.dgvPesquisa = new System.Windows.Forms.DataGridView();
             this.btnCarregarPesquisa = new System.Windows.Forms.Button();
             this.txtSQL = new System.Windows.Forms.TextBox();
-            this.lblFabricante = new System.Windows.Forms.Label();
-            this.btnPesquisarAparelhos = new System.Windows.Forms.Button();
-            this.cmbFabricantes = new System.Windows.Forms.ComboBox();
+            this.lbl1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,43 +63,22 @@
             this.txtSQL.Size = new System.Drawing.Size(643, 93);
             this.txtSQL.TabIndex = 2;
             // 
-            // lblFabricante
+            // lbl1
             // 
-            this.lblFabricante.AutoSize = true;
-            this.lblFabricante.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFabricante.Location = new System.Drawing.Point(12, 29);
-            this.lblFabricante.Name = "lblFabricante";
-            this.lblFabricante.Size = new System.Drawing.Size(95, 18);
-            this.lblFabricante.TabIndex = 4;
-            this.lblFabricante.Text = "Fabricantes:";
-            // 
-            // btnPesquisarAparelhos
-            // 
-            this.btnPesquisarAparelhos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPesquisarAparelhos.Location = new System.Drawing.Point(288, 24);
-            this.btnPesquisarAparelhos.Name = "btnPesquisarAparelhos";
-            this.btnPesquisarAparelhos.Size = new System.Drawing.Size(198, 26);
-            this.btnPesquisarAparelhos.TabIndex = 6;
-            this.btnPesquisarAparelhos.Text = "Pesquisar Aparelhos";
-            this.btnPesquisarAparelhos.UseVisualStyleBackColor = true;
-            this.btnPesquisarAparelhos.Click += new System.EventHandler(this.btnPesquisarAparelhos_Click);
-            // 
-            // cmbFabricantes
-            // 
-            this.cmbFabricantes.FormattingEnabled = true;
-            this.cmbFabricantes.Location = new System.Drawing.Point(113, 30);
-            this.cmbFabricantes.Name = "cmbFabricantes";
-            this.cmbFabricantes.Size = new System.Drawing.Size(121, 21);
-            this.cmbFabricantes.TabIndex = 7;
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.Location = new System.Drawing.Point(12, 29);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(114, 18);
+            this.lbl1.TabIndex = 4;
+            this.lbl1.Text = "Executar Script";
             // 
             // frmPesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(676, 457);
-            this.Controls.Add(this.cmbFabricantes);
-            this.Controls.Add(this.btnPesquisarAparelhos);
-            this.Controls.Add(this.lblFabricante);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.txtSQL);
             this.Controls.Add(this.btnCarregarPesquisa);
             this.Controls.Add(this.dgvPesquisa);
@@ -120,9 +97,7 @@
         private System.Windows.Forms.DataGridView dgvPesquisa;
         private System.Windows.Forms.Button btnCarregarPesquisa;
         private System.Windows.Forms.TextBox txtSQL;
-        private System.Windows.Forms.Label lblFabricante;
-        private System.Windows.Forms.Button btnPesquisarAparelhos;
-        private System.Windows.Forms.ComboBox cmbFabricantes;
+        private System.Windows.Forms.Label lbl1;
     }
 }
 

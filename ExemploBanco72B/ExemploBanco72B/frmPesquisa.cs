@@ -17,8 +17,8 @@ namespace ExemploBanco72B
 
         private NpgsqlConnection cn = new NpgsqlConnection();
         private string stringConexao = "server = pgsql.projetoscti.com.br;" +
-                "database = projetoscti; port=5432; " +
-                "user id = projetoscti; password = gaspar";
+                 "database = projetoscti13; port=5432; " +
+                 "user id = projetoscti13; password = 0812152830";
 
         public frmPesquisa()
         {
@@ -30,7 +30,6 @@ namespace ExemploBanco72B
             cn.ConnectionString = stringConexao;
             cn.Open();
             MessageBox.Show("Conectado ao banco de dados !!!!");
-            CarregarFabricantes();
         }
 
         private void frmPesquisa_FormClosing(object sender, FormClosingEventArgs e)
@@ -59,41 +58,6 @@ namespace ExemploBanco72B
             da.Fill(ds);
 
             dgvPesquisa.DataSource = ds.Tables[0];
-
-        }
-
-        private void CarregarFabricantes()
-        {
-            string sql;
-            sql = "select id_fabricante, nome from fabricante " + " order by nome";
-            NpgsqlCommand cmd= new NpgsqlCommand(sql, cn);  
-            NpgsqlDataAdapter da= new NpgsqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            cmbFabricantes.DataSource = dt;
-            cmbFabricantes.DisplayMember = "nome";
-            cmbFabricantes.ValueMember = "id_fabricante";
-            cmbFabricantes.SelectedIndex = 0;
-
-        }
-
-        private void btnPesquisarAparelhos_Click(object sender, EventArgs e)
-        {
-            Int64 id_fabricante;
-            id_fabricante = Convert.ToInt64(cmbFabricantes.SelectedValue);
-            CarregarAparelhos(id_fabricante);
-        }
-
-        private void CarregarAparelhos(Int64 id_fabricante)
-        {
-            string sql;
-            sql = "select * from aparelho " + "where id_fabricante = " + id_fabricante + " " + " order by modelo";
-            NpgsqlCommand cmd  = new NpgsqlCommand(sql, cn);    
-            NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            dgvPesquisa.DataSource = dt;
-            dgvPesquisa.Refresh();
 
         }
     }
