@@ -18,7 +18,6 @@ namespace ExemploBanco72B
                 "database = projetoscti13; port=5432; " +
                 "user id = projetoscti13; password = 0812152830";
 
-        private bool novo = false;
         public frmCadastro_user()
         {
             InitializeComponent();
@@ -26,16 +25,15 @@ namespace ExemploBanco72B
 
         private void limparForm()
         {
-            txtCPF.Clear();
             txtNone.Clear();
+            txtEmail.Clear();
+            txtCPF.Clear();
+            txtCEP.Clear();
+            txtTelefone.Clear();
+            txtSenha.Clear();
+            txtCSenha.Clear(); 
         }
 
-        private void btnNovo_Click(object sender, EventArgs e)
-        {
-            novo = true;
-            limparForm();
-            txtCPF.Focus();
-        }
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
@@ -49,17 +47,9 @@ namespace ExemploBanco72B
                     txtNone.Focus();
                     return;
                 }
-                if (novo)
-                {
-                    sql = "insert into lanchonete_usuario (cpf, email, nome, datanasc, cep, telefone, senha, adm) " + "values (@cpf, @email, @nome, current_timestamp, @cep, @telefone, @senha, TRUE)";                 
-                }
-                else
-                {
-                    sql = "update fabricante set " +
-                        "nome = @nome, " +
-                        "observacao = @observacao " +
-                        "where id_fabricante = @id_fabricante";
-                }
+                 sql = "insert into lanchonete_usuario (cpf, email, nome, datanasc, cep, telefone, senha, adm) " + "values (@cpf, @email, @nome, current_timestamp, @cep, @telefone, @senha, TRUE)";                 
+               
+
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
                 cmd.Parameters.AddWithValue("@cpf", txtCPF.Text);
@@ -73,12 +63,10 @@ namespace ExemploBanco72B
                     cmd.Parameters.AddWithValue("@adm", "TRUE");
                 else
                     cmd.Parameters.AddWithValue("@adm", "FALSE");
-                testes.Text = sql;
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Os dados do fabricante foram salvos com sucesso",
                         "Cadastro do fabricante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 limparForm();
-                novo = false;
                 txtCPF.Focus();
             }
             catch (Exception ex)
@@ -91,36 +79,9 @@ namespace ExemploBanco72B
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
-            novo = false;
             limparForm();
             txtCPF.Focus();
         }
-
-        private void btnExcluir_Click(object sender, EventArgs e)
-        {
-            string sql;
-            try
-            {
-                if (!novo && string.IsNullOrEmpty(txtCPF.Text))
-                {
-                    sql = "delete from fabricante " + "where id_fabricante - @id_fabricante";
-                    NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                    cmd.Parameters.AddWithValue("@id_fabricante", Convert.ToInt64(txtCPF.Text));
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Os dados do fabricante foram excluidos com sucesso",
-                            "Cadastro do fabricante", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    limparForm();
-                    novo = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ocorreu um erro ao excluir os dados do fabricante" +
-                    "\n\nMais detalhes: " + ex.Message,
-                    "Cadastro de fabricantes", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void btnSair_Click(object sender, EventArgs e)
         {
             this.Close();

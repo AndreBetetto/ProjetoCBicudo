@@ -40,7 +40,8 @@ namespace ExemploBanco72B
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromArgb(0, 48, 73);
+            this.ControlBox = false;
+            //this.BackColor = Color.FromArgb(0, 48, 73);
         }
     }
 }

@@ -32,10 +32,8 @@
             System.Windows.Forms.DateTimePicker dtpNascimento;
             this.lbl1 = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.TextBox();
-            this.btnNovo = new System.Windows.Forms.Button();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
             this.txtNone = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblCPF = new System.Windows.Forms.Label();
@@ -54,7 +52,6 @@
             this.radAdmsim = new System.Windows.Forms.RadioButton();
             this.lblAdm = new System.Windows.Forms.Label();
             this.radAdmnão = new System.Windows.Forms.RadioButton();
-            this.testes = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             dtpNascimento = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
@@ -79,17 +76,6 @@
             this.txtCPF.Size = new System.Drawing.Size(127, 20);
             this.txtCPF.TabIndex = 34;
             // 
-            // btnNovo
-            // 
-            this.btnNovo.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Location = new System.Drawing.Point(27, 413);
-            this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(83, 34);
-            this.btnNovo.TabIndex = 33;
-            this.btnNovo.Text = "&Novo";
-            this.btnNovo.UseVisualStyleBackColor = true;
-            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
-            // 
             // btnSalvar
             // 
             this.btnSalvar.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,17 +97,6 @@
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.Location = new System.Drawing.Point(430, 413);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(83, 34);
-            this.btnExcluir.TabIndex = 31;
-            this.btnExcluir.Text = "&Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // txtNone
             // 
@@ -307,13 +282,6 @@
             this.radAdmnão.Text = "não";
             this.radAdmnão.UseVisualStyleBackColor = true;
             // 
-            // testes
-            // 
-            this.testes.Location = new System.Drawing.Point(27, 358);
-            this.testes.Name = "testes";
-            this.testes.Size = new System.Drawing.Size(100, 20);
-            this.testes.TabIndex = 51;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
@@ -324,7 +292,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 459);
-            this.Controls.Add(this.testes);
             this.Controls.Add(this.radAdmnão);
             this.Controls.Add(this.lblAdm);
             this.Controls.Add(this.radAdmsim);
@@ -342,10 +309,8 @@
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.txtCPF);
-            this.Controls.Add(this.btnNovo);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.txtNone);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblCPF);
@@ -362,10 +327,8 @@
 
         private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.TextBox txtCPF;
-        private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.TextBox txtNone;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblCPF;
@@ -384,7 +347,6 @@
         private System.Windows.Forms.RadioButton radAdmsim;
         private System.Windows.Forms.Label lblAdm;
         private System.Windows.Forms.RadioButton radAdmnão;
-        private System.Windows.Forms.TextBox testes;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
