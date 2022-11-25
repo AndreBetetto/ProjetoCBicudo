@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DateTimePicker dtpNascimento;
             this.lbl1 = new System.Windows.Forms.Label();
             this.txtCPF = new System.Windows.Forms.TextBox();
             this.btnNovo = new System.Windows.Forms.Button();
@@ -40,19 +41,19 @@
             this.btnSair = new System.Windows.Forms.Button();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.dtpNascimento = new System.Windows.Forms.DateTimePicker();
             this.lblDataNasc = new System.Windows.Forms.Label();
             this.txtCEP = new System.Windows.Forms.TextBox();
             this.lblCEP = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtCSenha = new System.Windows.Forms.TextBox();
             this.lblCSenha = new System.Windows.Forms.Label();
-            this.radAdm = new System.Windows.Forms.RadioButton();
+            this.radAdmsim = new System.Windows.Forms.RadioButton();
             this.lblAdm = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radAdmnão = new System.Windows.Forms.RadioButton();
+            dtpNascimento = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // lbl1
@@ -178,11 +179,13 @@
             // 
             // dtpNascimento
             // 
-            this.dtpNascimento.CalendarFont = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNascimento.Location = new System.Drawing.Point(168, 156);
-            this.dtpNascimento.Name = "dtpNascimento";
-            this.dtpNascimento.Size = new System.Drawing.Size(245, 20);
-            this.dtpNascimento.TabIndex = 38;
+            dtpNascimento.CalendarFont = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dtpNascimento.CustomFormat = "";
+            dtpNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            dtpNascimento.Location = new System.Drawing.Point(168, 156);
+            dtpNascimento.Name = "dtpNascimento";
+            dtpNascimento.Size = new System.Drawing.Size(245, 20);
+            dtpNascimento.TabIndex = 38;
             // 
             // lblDataNasc
             // 
@@ -212,13 +215,13 @@
             this.lblCEP.TabIndex = 40;
             this.lblCEP.Text = "CEP:";
             // 
-            // textBox1
+            // txtTelefone
             // 
-            this.textBox1.Location = new System.Drawing.Point(168, 208);
-            this.textBox1.MaxLength = 15;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(127, 20);
-            this.textBox1.TabIndex = 43;
+            this.txtTelefone.Location = new System.Drawing.Point(168, 208);
+            this.txtTelefone.MaxLength = 15;
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(127, 20);
+            this.txtTelefone.TabIndex = 43;
             // 
             // label3
             // 
@@ -266,18 +269,17 @@
             this.lblCSenha.TabIndex = 46;
             this.lblCSenha.Text = "Confirmar senha:";
             // 
-            // radAdm
+            // radAdmsim
             // 
-            this.radAdm.AutoSize = true;
-            this.radAdm.Enabled = false;
-            this.radAdm.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radAdm.Location = new System.Drawing.Point(162, 309);
-            this.radAdm.Name = "radAdm";
-            this.radAdm.Size = new System.Drawing.Size(45, 17);
-            this.radAdm.TabIndex = 48;
-            this.radAdm.TabStop = true;
-            this.radAdm.Text = "sim";
-            this.radAdm.UseVisualStyleBackColor = true;
+            this.radAdmsim.AutoSize = true;
+            this.radAdmsim.Enabled = false;
+            this.radAdmsim.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radAdmsim.Location = new System.Drawing.Point(162, 309);
+            this.radAdmsim.Name = "radAdmsim";
+            this.radAdmsim.Size = new System.Drawing.Size(45, 17);
+            this.radAdmsim.TabIndex = 48;
+            this.radAdmsim.Text = "sim";
+            this.radAdmsim.UseVisualStyleBackColor = true;
             // 
             // lblAdm
             // 
@@ -289,36 +291,37 @@
             this.lblAdm.TabIndex = 49;
             this.lblAdm.Text = "É adm?";
             // 
-            // radioButton1
+            // radAdmnão
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(208, 309);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(46, 17);
-            this.radioButton1.TabIndex = 50;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "não";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radAdmnão.AutoSize = true;
+            this.radAdmnão.Checked = true;
+            this.radAdmnão.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radAdmnão.Location = new System.Drawing.Point(208, 309);
+            this.radAdmnão.Name = "radAdmnão";
+            this.radAdmnão.Size = new System.Drawing.Size(46, 17);
+            this.radAdmnão.TabIndex = 50;
+            this.radAdmnão.TabStop = true;
+            this.radAdmnão.Text = "não";
+            this.radAdmnão.UseVisualStyleBackColor = true;
             // 
             // frmCadastro_user
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(696, 459);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radAdmnão);
             this.Controls.Add(this.lblAdm);
-            this.Controls.Add(this.radAdm);
+            this.Controls.Add(this.radAdmsim);
             this.Controls.Add(this.txtCSenha);
             this.Controls.Add(this.lblCSenha);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.lblSenha);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtCEP);
             this.Controls.Add(this.lblCEP);
             this.Controls.Add(this.lblDataNasc);
-            this.Controls.Add(this.dtpNascimento);
+            this.Controls.Add(dtpNascimento);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.lbl1);
@@ -353,18 +356,17 @@
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.DateTimePicker dtpNascimento;
         private System.Windows.Forms.Label lblDataNasc;
         private System.Windows.Forms.TextBox txtCEP;
         private System.Windows.Forms.Label lblCEP;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtCSenha;
         private System.Windows.Forms.Label lblCSenha;
-        private System.Windows.Forms.RadioButton radAdm;
+        private System.Windows.Forms.RadioButton radAdmsim;
         private System.Windows.Forms.Label lblAdm;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radAdmnão;
     }
 }

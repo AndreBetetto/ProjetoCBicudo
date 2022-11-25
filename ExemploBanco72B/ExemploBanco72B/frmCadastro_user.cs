@@ -15,8 +15,8 @@ namespace ExemploBanco72B
     {
         private NpgsqlConnection cn = new NpgsqlConnection();
         private string stringConexao = "server = pgsql.projetoscti.com.br;" +
-                "database = projetoscti; port=5432; " +
-                "user id = projetoscti; password = gaspar";
+                "database = projetoscti13; port=5432; " +
+                "user id = projetoscti13; password = 0812152830";
 
         private bool novo = false;
         public frmCadastro_user()
@@ -51,7 +51,7 @@ namespace ExemploBanco72B
                 }
                 if (novo)
                 {
-                    sql = "insert into fabricante (id_fabricante, nome, observacao) " + "values (@id_fabricante, @nome, @observacao)";
+                    sql = "insert into lanchonete_usuario (cpf, email, nome, datanasc, cep, telefone, senha, adm) " + "values (@cpf, @email, @nome, @datanasc, @cep, @telefone, @senha, @adm)";
                 }
                 else
                 {
@@ -62,9 +62,18 @@ namespace ExemploBanco72B
                 }
 
                 NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
-                cmd.Parameters.AddWithValue("@id_fabricante", Convert.ToInt64(txtCPF.Text));
+                cmd.Parameters.AddWithValue("@cpf", txtCPF.Text);
+                cmd.Parameters.AddWithValue("@email", txtEmail.Text);
                 cmd.Parameters.AddWithValue("@nome", txtNone.Text);
-
+                cmd.Parameters.AddWithValue("@datanasc", 2000/01/01);
+                cmd.Parameters.AddWithValue("@cep", txtCEP.Text);
+                cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
+                cmd.Parameters.AddWithValue("@senha", txtSenha.Text);
+                if (radAdmsim.Checked == true)
+                    cmd.Parameters.AddWithValue("@adm", "TRUE");
+                else
+                    cmd.Parameters.AddWithValue("@adm", "FALSE");
+                   
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Os dados do fabricante foram salvos com sucesso",
                         "Cadastro do fabricante", MessageBoxButtons.OK, MessageBoxIcon.Information);

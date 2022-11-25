@@ -250,7 +250,6 @@ C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\o
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmCadastro_user.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmLogin.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmMenu.resources
-C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmNaoCadastrado.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmSplash.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmCad_fabricante.resources
 C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.frmPesquisa.resources
@@ -353,3 +352,4 @@ C:\Users\jairs\Desktop\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B
 C:\Users\jairs\Desktop\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.csproj.CopyComplete
 C:\Users\jairs\Desktop\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.exe
 C:\Users\jairs\Desktop\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.pdb
+C:\Users\jairs\Documents\GitHub\ProjetoCBicudo\ExemploBanco72B\ExemploBanco72B\obj\Debug\ExemploBanco72B.Lanches.resources
