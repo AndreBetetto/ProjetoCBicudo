@@ -163,6 +163,7 @@
             this.btnConfirma.TabIndex = 33;
             this.btnConfirma.Text = "Confirmar pedido";
             this.btnConfirma.UseVisualStyleBackColor = true;
+            this.btnConfirma.Click += new System.EventHandler(this.btnConfirma_Click);
             // 
             // Finalizacao
             // 

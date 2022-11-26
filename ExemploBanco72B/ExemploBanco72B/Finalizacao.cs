@@ -80,7 +80,58 @@ namespace ExemploBanco72B
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ocorreu ao finalizar o pedido" + "\n\nMais detalhes: " + ex.Message, "Finalizar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Ocorreu um erro ao finalizar o pedido" + "\n\nMais detalhes: " + ex.Message, "Finalizar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
+
+        private void btnConfirma_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string sql;
+                sql = "select lanche, acompanhamento, bebida, sobremesa from lanchonete_combo order by id_combo desc limit 1";
+                NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+                NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                da.Fill(ds);
+                dgvPesquisa.DataSource = ds.Tables[0];
+                string idlanche = dgvPesquisa[0, 0].Value.ToString();
+                string id6 = dgvPesquisa[1, 0].Value.ToString();
+                string id7 = dgvPesquisa[2, 0].Value.ToString();
+                string id8 = dgvPesquisa[3, 0].Value.ToString();
+
+                string sql2;
+                sql2 = "select pao, proteina, laticinio, molho, salada from lanchonete_lanche where id_lanche = @idlanche";
+                NpgsqlCommand cmd2 = new NpgsqlCommand(sql2, cn);
+                cmd2.Parameters.AddWithValue("@idlanche", Convert.ToInt16(idlanche));
+                NpgsqlDataAdapter da2 = new NpgsqlDataAdapter(cmd2);
+                DataSet ds2 = new DataSet();
+                da2.Fill(ds2);
+                dgvPesquisa.DataSource = ds2.Tables[0];
+                string id1 = dgvPesquisa[0, 0].Value.ToString();
+                string id2 = dgvPesquisa[1, 0].Value.ToString();
+                string id3 = dgvPesquisa[2, 0].Value.ToString();
+                string id4 = dgvPesquisa[3, 0].Value.ToString();
+                string id5 = dgvPesquisa[4, 0].Value.ToString();
+
+                string sql3;
+                sql3 = "update lanchonete_ingredientes_adicionais set estoque = estoque - 1 where id_item = @1 OR id_item = @2 OR id_item = @3 OR id_item = @4 OR id_item = @5 OR id_item = @6 OR id_item = @7 OR id_item = @8";
+                NpgsqlCommand cmd3 = new NpgsqlCommand(sql3, cn);
+                cmd3.Parameters.AddWithValue("@1", Convert.ToInt16(id1));
+                cmd3.Parameters.AddWithValue("@2", Convert.ToInt16(id2));
+                cmd3.Parameters.AddWithValue("@3", Convert.ToInt16(id3));
+                cmd3.Parameters.AddWithValue("@4", Convert.ToInt16(id4));
+                cmd3.Parameters.AddWithValue("@5", Convert.ToInt16(id5));
+                cmd3.Parameters.AddWithValue("@6", Convert.ToInt16(id6));
+                cmd3.Parameters.AddWithValue("@7", Convert.ToInt16(id7));
+                cmd3.Parameters.AddWithValue("@8", Convert.ToInt16(id8));
+                cmd3.ExecuteNonQuery();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ocorreu  um erro ao finalizar o pedido" + "\n\nMais detalhes: " + ex.Message, "Finalizar Pedido", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
         }

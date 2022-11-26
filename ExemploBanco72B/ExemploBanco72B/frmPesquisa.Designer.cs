@@ -32,6 +32,17 @@
             this.btnCarregarPesquisa = new System.Windows.Forms.Button();
             this.txtSQL = new System.Windows.Forms.TextBox();
             this.lbl1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnConsulta1 = new System.Windows.Forms.Button();
+            this.btnConsulta2 = new System.Windows.Forms.Button();
+            this.btnConsulta3 = new System.Windows.Forms.Button();
+            this.btnConsulta4 = new System.Windows.Forms.Button();
+            this.btnConsulta5 = new System.Windows.Forms.Button();
+            this.btnConsulta6 = new System.Windows.Forms.Button();
+            this.btnConsulta7 = new System.Windows.Forms.Button();
+            this.btnConsulta8 = new System.Windows.Forms.Button();
+            this.btnConsulta9 = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -40,12 +51,12 @@
             this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPesquisa.Location = new System.Drawing.Point(12, 182);
             this.dgvPesquisa.Name = "dgvPesquisa";
-            this.dgvPesquisa.Size = new System.Drawing.Size(643, 223);
+            this.dgvPesquisa.Size = new System.Drawing.Size(643, 241);
             this.dgvPesquisa.TabIndex = 0;
             // 
             // btnCarregarPesquisa
             // 
-            this.btnCarregarPesquisa.Location = new System.Drawing.Point(486, 411);
+            this.btnCarregarPesquisa.Location = new System.Drawing.Point(12, 429);
             this.btnCarregarPesquisa.Name = "btnCarregarPesquisa";
             this.btnCarregarPesquisa.Size = new System.Drawing.Size(169, 34);
             this.btnCarregarPesquisa.TabIndex = 1;
@@ -73,11 +84,132 @@
             this.lbl1.TabIndex = 4;
             this.lbl1.Text = "Executar Script";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(673, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 18);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Cosultas principais";
+            // 
+            // btnConsulta1
+            // 
+            this.btnConsulta1.Location = new System.Drawing.Point(669, 69);
+            this.btnConsulta1.Name = "btnConsulta1";
+            this.btnConsulta1.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta1.TabIndex = 6;
+            this.btnConsulta1.Text = "Cosultar todos os ingredientes";
+            this.btnConsulta1.UseVisualStyleBackColor = true;
+            this.btnConsulta1.Click += new System.EventHandler(this.btnConsulta1_Click);
+            // 
+            // btnConsulta2
+            // 
+            this.btnConsulta2.Location = new System.Drawing.Point(669, 109);
+            this.btnConsulta2.Name = "btnConsulta2";
+            this.btnConsulta2.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta2.TabIndex = 7;
+            this.btnConsulta2.Text = "Consultar todos os pães";
+            this.btnConsulta2.UseVisualStyleBackColor = true;
+            this.btnConsulta2.Click += new System.EventHandler(this.btnConsulta2_Click);
+            // 
+            // btnConsulta3
+            // 
+            this.btnConsulta3.Location = new System.Drawing.Point(669, 149);
+            this.btnConsulta3.Name = "btnConsulta3";
+            this.btnConsulta3.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta3.TabIndex = 8;
+            this.btnConsulta3.Text = "Consultar todas as proteínas";
+            this.btnConsulta3.UseVisualStyleBackColor = true;
+            this.btnConsulta3.Click += new System.EventHandler(this.btnConsulta3_Click);
+            // 
+            // btnConsulta4
+            // 
+            this.btnConsulta4.Location = new System.Drawing.Point(669, 189);
+            this.btnConsulta4.Name = "btnConsulta4";
+            this.btnConsulta4.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta4.TabIndex = 9;
+            this.btnConsulta4.Text = "Consultar todos os laticínios";
+            this.btnConsulta4.UseVisualStyleBackColor = true;
+            this.btnConsulta4.Click += new System.EventHandler(this.btnConsulta4_Click);
+            // 
+            // btnConsulta5
+            // 
+            this.btnConsulta5.Location = new System.Drawing.Point(669, 229);
+            this.btnConsulta5.Name = "btnConsulta5";
+            this.btnConsulta5.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta5.TabIndex = 10;
+            this.btnConsulta5.Text = "Consultar todos os molhos";
+            this.btnConsulta5.UseVisualStyleBackColor = true;
+            this.btnConsulta5.Click += new System.EventHandler(this.btnConsulta5_Click);
+            // 
+            // btnConsulta6
+            // 
+            this.btnConsulta6.Location = new System.Drawing.Point(669, 269);
+            this.btnConsulta6.Name = "btnConsulta6";
+            this.btnConsulta6.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta6.TabIndex = 11;
+            this.btnConsulta6.Text = "Consultar todas as saladas";
+            this.btnConsulta6.UseVisualStyleBackColor = true;
+            this.btnConsulta6.Click += new System.EventHandler(this.btnConsulta6_Click);
+            // 
+            // btnConsulta7
+            // 
+            this.btnConsulta7.Location = new System.Drawing.Point(669, 309);
+            this.btnConsulta7.Name = "btnConsulta7";
+            this.btnConsulta7.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta7.TabIndex = 12;
+            this.btnConsulta7.Text = "Consultar todos os acompanhamentos";
+            this.btnConsulta7.UseVisualStyleBackColor = true;
+            this.btnConsulta7.Click += new System.EventHandler(this.btnConsulta7_Click);
+            // 
+            // btnConsulta8
+            // 
+            this.btnConsulta8.Location = new System.Drawing.Point(669, 349);
+            this.btnConsulta8.Name = "btnConsulta8";
+            this.btnConsulta8.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta8.TabIndex = 13;
+            this.btnConsulta8.Text = "Consultar todas as sobremesas";
+            this.btnConsulta8.UseVisualStyleBackColor = true;
+            this.btnConsulta8.Click += new System.EventHandler(this.btnConsulta8_Click);
+            // 
+            // btnConsulta9
+            // 
+            this.btnConsulta9.Location = new System.Drawing.Point(669, 389);
+            this.btnConsulta9.Name = "btnConsulta9";
+            this.btnConsulta9.Size = new System.Drawing.Size(145, 34);
+            this.btnConsulta9.TabIndex = 14;
+            this.btnConsulta9.Text = "Consultar todosos lanches";
+            this.btnConsulta9.UseVisualStyleBackColor = true;
+            this.btnConsulta9.Click += new System.EventHandler(this.btnConsulta9_Click);
+            // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Location = new System.Drawing.Point(486, 429);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(169, 34);
+            this.btnLimpar.TabIndex = 15;
+            this.btnLimpar.Text = "Limpar pesquisa";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // frmPesquisa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(676, 457);
+            this.ClientSize = new System.Drawing.Size(823, 472);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnConsulta9);
+            this.Controls.Add(this.btnConsulta8);
+            this.Controls.Add(this.btnConsulta7);
+            this.Controls.Add(this.btnConsulta6);
+            this.Controls.Add(this.btnConsulta5);
+            this.Controls.Add(this.btnConsulta4);
+            this.Controls.Add(this.btnConsulta3);
+            this.Controls.Add(this.btnConsulta2);
+            this.Controls.Add(this.btnConsulta1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl1);
             this.Controls.Add(this.txtSQL);
             this.Controls.Add(this.btnCarregarPesquisa);
@@ -98,6 +230,17 @@
         private System.Windows.Forms.Button btnCarregarPesquisa;
         private System.Windows.Forms.TextBox txtSQL;
         private System.Windows.Forms.Label lbl1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnConsulta1;
+        private System.Windows.Forms.Button btnConsulta2;
+        private System.Windows.Forms.Button btnConsulta3;
+        private System.Windows.Forms.Button btnConsulta4;
+        private System.Windows.Forms.Button btnConsulta5;
+        private System.Windows.Forms.Button btnConsulta6;
+        private System.Windows.Forms.Button btnConsulta7;
+        private System.Windows.Forms.Button btnConsulta8;
+        private System.Windows.Forms.Button btnConsulta9;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }
 

@@ -65,5 +65,61 @@ namespace ExemploBanco72B
                     "Scripts", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnConsulta1_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_item, tipo, nome, descricao, estoque, preco, custo from lanchonete_ingredientes_adicionais where excluido = FALSE order by estoque asc";
+        }
+
+        private void btnConsulta2_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_item, tipo, nome, descricao, estoque, preco, custo from lanchonete_ingredientes_adicionais where excluido = FALSE and tipo = 'Pão' order by estoque asc";
+        }
+
+        private void btnConsulta3_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_item, tipo, nome, descricao, estoque, preco, custo from lanchonete_ingredientes_adicionais where excluido = FALSE and tipo = 'Proteína' order by estoque asc";
+        }
+
+        private void btnConsulta4_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_item, tipo, nome, descricao, estoque, preco, custo from lanchonete_ingredientes_adicionais where excluido = FALSE and tipo = 'Laticínio' order by estoque asc";
+        }
+
+        private void btnConsulta5_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_item, tipo, nome, descricao, estoque, preco, custo from lanchonete_ingredientes_adicionais where excluido = FALSE and tipo = 'Molho' order by estoque asc";
+        }
+
+        private void btnConsulta6_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_item, tipo, nome, descricao, estoque, preco, custo from lanchonete_ingredientes_adicionais where excluido = FALSE and tipo = 'Salada' order by estoque asc";
+        }
+
+        private void btnConsulta7_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_item, tipo, nome, descricao, estoque, preco, custo from lanchonete_ingredientes_adicionais where excluido = FALSE and tipo = 'Acompanhamento' order by estoque asc";
+        }
+
+        private void btnConsulta8_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_item, tipo, nome, descricao, estoque, preco, custo from lanchonete_ingredientes_adicionais where excluido = FALSE and tipo = 'Sobremesa' order by estoque asc";
+        }
+
+        private void btnConsulta9_Click(object sender, EventArgs e)
+        {
+            txtSQL.Text = "select id_lanche, nomelanche, pao, proteina, laticinio,molho, salada, preco, custo from lanchonete_lanche where excluido = FALSE order by preco desc";
+        }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            string sql = "select null as \"Sistema aguardando script\"; ";
+            NpgsqlCommand cmd = new NpgsqlCommand(sql, cn);
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            dgvPesquisa.DataSource = ds.Tables[0];
+            txtSQL.Text = "";
+        }
     }
 }

@@ -299,6 +299,15 @@ namespace ExemploBanco72B
                 Finalizacao splash = new Finalizacao();
                 splash.ShowDialog();
                 this.Visible = true;
+                txtNomelanche.Text = "";
+                comboLat.Text = "Selecionar";
+                comboPro.Text = "Selecionar";
+                comboPao.Text = "Selecionar";
+                comboSal.Text = "Selecionar";
+                comboMol.Text = "Selecionar";
+                radLanche1.Checked = true;
+                radAcom1.Checked = true;
+                radSobre1.Checked = true;
             }
             catch (Exception ex)
             {
