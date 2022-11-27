@@ -60,5 +60,13 @@ namespace ExemploBanco72B
             splash.ShowDialog();
             this.Visible = true;
         }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmUsers splash = new frmUsers();
+            splash.ShowDialog();
+            this.Visible = true;
+        }
     }
 }
