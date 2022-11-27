@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCadastro_ingredientes));
             this.lbl1 = new System.Windows.Forms.Label();
             this.btnNovo = new System.Windows.Forms.Button();
             this.btnSlavar = new System.Windows.Forms.Button();
@@ -46,9 +47,11 @@
             this.lblPreco = new System.Windows.Forms.Label();
             this.numCusto = new System.Windows.Forms.NumericUpDown();
             this.lblCusto = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numEstoque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPreco)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCusto)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lbl1
@@ -56,18 +59,20 @@
             this.lbl1.BackColor = System.Drawing.Color.LightGray;
             this.lbl1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl1.Location = new System.Drawing.Point(262, 6);
+            this.lbl1.Location = new System.Drawing.Point(349, 7);
+            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl1.Name = "lbl1";
-            this.lbl1.Size = new System.Drawing.Size(282, 27);
+            this.lbl1.Size = new System.Drawing.Size(375, 33);
             this.lbl1.TabIndex = 47;
             this.lbl1.Text = "Cadastro de Ingredientes";
             this.lbl1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(80, 410);
+            this.btnNovo.Location = new System.Drawing.Point(107, 505);
+            this.btnNovo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(83, 34);
+            this.btnNovo.Size = new System.Drawing.Size(111, 42);
             this.btnNovo.TabIndex = 45;
             this.btnNovo.Text = "&Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -75,9 +80,10 @@
             // 
             // btnSlavar
             // 
-            this.btnSlavar.Location = new System.Drawing.Point(215, 410);
+            this.btnSlavar.Location = new System.Drawing.Point(287, 505);
+            this.btnSlavar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSlavar.Name = "btnSlavar";
-            this.btnSlavar.Size = new System.Drawing.Size(83, 34);
+            this.btnSlavar.Size = new System.Drawing.Size(111, 42);
             this.btnSlavar.TabIndex = 38;
             this.btnSlavar.Text = "&Salvar";
             this.btnSlavar.UseVisualStyleBackColor = true;
@@ -85,9 +91,10 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(353, 410);
+            this.btnCancelar.Location = new System.Drawing.Point(471, 505);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(83, 34);
+            this.btnCancelar.Size = new System.Drawing.Size(111, 42);
             this.btnCancelar.TabIndex = 44;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -95,9 +102,10 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(483, 410);
+            this.btnExcluir.Location = new System.Drawing.Point(644, 505);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(83, 34);
+            this.btnExcluir.Size = new System.Drawing.Size(111, 42);
             this.btnExcluir.TabIndex = 43;
             this.btnExcluir.Text = "&Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -105,29 +113,32 @@
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(211, 91);
+            this.txtNome.Location = new System.Drawing.Point(281, 112);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(412, 20);
+            this.txtNome.Size = new System.Drawing.Size(548, 22);
             this.txtNome.TabIndex = 36;
             // 
             // lblDescricao
             // 
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescricao.Location = new System.Drawing.Point(77, 145);
+            this.lblDescricao.Location = new System.Drawing.Point(103, 178);
+            this.lblDescricao.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescricao.Name = "lblDescricao";
-            this.lblDescricao.Size = new System.Drawing.Size(84, 18);
+            this.lblDescricao.Size = new System.Drawing.Size(104, 23);
             this.lblDescricao.TabIndex = 42;
             this.lblDescricao.Text = "Descrição:";
             // 
             // txtDescricao
             // 
             this.txtDescricao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescricao.Location = new System.Drawing.Point(211, 145);
+            this.txtDescricao.Location = new System.Drawing.Point(281, 178);
+            this.txtDescricao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescricao.Multiline = true;
             this.txtDescricao.Name = "txtDescricao";
             this.txtDescricao.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtDescricao.Size = new System.Drawing.Size(512, 93);
+            this.txtDescricao.Size = new System.Drawing.Size(681, 114);
             this.txtDescricao.TabIndex = 37;
             this.txtDescricao.Text = "Refrigerante gaseificado não alcoólico";
             // 
@@ -135,17 +146,19 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(77, 93);
+            this.label1.Location = new System.Drawing.Point(103, 114);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 18);
+            this.label1.Size = new System.Drawing.Size(67, 23);
             this.label1.TabIndex = 41;
             this.label1.Text = "Nome:";
             // 
             // btnSair
             // 
-            this.btnSair.Location = new System.Drawing.Point(627, 410);
+            this.btnSair.Location = new System.Drawing.Point(836, 505);
+            this.btnSair.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(83, 34);
+            this.btnSair.Size = new System.Drawing.Size(111, 42);
             this.btnSair.TabIndex = 39;
             this.btnSair.Text = "&Sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -155,40 +168,44 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(77, 117);
+            this.lblTipo.Location = new System.Drawing.Point(103, 144);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(42, 18);
+            this.lblTipo.Size = new System.Drawing.Size(53, 23);
             this.lblTipo.TabIndex = 49;
             this.lblTipo.Text = "Tipo:";
             // 
             // cbbTipo
             // 
             this.cbbTipo.FormattingEnabled = true;
-            this.cbbTipo.Location = new System.Drawing.Point(211, 118);
+            this.cbbTipo.Location = new System.Drawing.Point(281, 145);
+            this.cbbTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cbbTipo.Name = "cbbTipo";
-            this.cbbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cbbTipo.Size = new System.Drawing.Size(160, 24);
             this.cbbTipo.TabIndex = 50;
             // 
             // lblEstoque
             // 
             this.lblEstoque.AutoSize = true;
             this.lblEstoque.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstoque.Location = new System.Drawing.Point(77, 246);
+            this.lblEstoque.Location = new System.Drawing.Point(103, 303);
+            this.lblEstoque.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstoque.Name = "lblEstoque";
-            this.lblEstoque.Size = new System.Drawing.Size(70, 18);
+            this.lblEstoque.Size = new System.Drawing.Size(88, 23);
             this.lblEstoque.TabIndex = 52;
             this.lblEstoque.Text = "Estoque:";
             // 
             // numEstoque
             // 
-            this.numEstoque.Location = new System.Drawing.Point(211, 248);
+            this.numEstoque.Location = new System.Drawing.Point(281, 305);
+            this.numEstoque.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numEstoque.Maximum = new decimal(new int[] {
             100000,
             0,
             0,
             0});
             this.numEstoque.Name = "numEstoque";
-            this.numEstoque.Size = new System.Drawing.Size(120, 20);
+            this.numEstoque.Size = new System.Drawing.Size(160, 22);
             this.numEstoque.TabIndex = 53;
             // 
             // numPreco
@@ -199,23 +216,25 @@
             0,
             0,
             131072});
-            this.numPreco.Location = new System.Drawing.Point(211, 274);
+            this.numPreco.Location = new System.Drawing.Point(281, 337);
+            this.numPreco.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numPreco.Maximum = new decimal(new int[] {
             1000000000,
             0,
             0,
             0});
             this.numPreco.Name = "numPreco";
-            this.numPreco.Size = new System.Drawing.Size(120, 20);
+            this.numPreco.Size = new System.Drawing.Size(160, 22);
             this.numPreco.TabIndex = 55;
             // 
             // lblPreco
             // 
             this.lblPreco.AutoSize = true;
             this.lblPreco.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPreco.Location = new System.Drawing.Point(77, 272);
+            this.lblPreco.Location = new System.Drawing.Point(103, 335);
+            this.lblPreco.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPreco.Name = "lblPreco";
-            this.lblPreco.Size = new System.Drawing.Size(78, 18);
+            this.lblPreco.Size = new System.Drawing.Size(99, 23);
             this.lblPreco.TabIndex = 54;
             this.lblPreco.Text = "Preço R$:";
             // 
@@ -227,31 +246,44 @@
             0,
             0,
             131072});
-            this.numCusto.Location = new System.Drawing.Point(211, 300);
+            this.numCusto.Location = new System.Drawing.Point(281, 369);
+            this.numCusto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.numCusto.Maximum = new decimal(new int[] {
             1000000000,
             0,
             0,
             0});
             this.numCusto.Name = "numCusto";
-            this.numCusto.Size = new System.Drawing.Size(120, 20);
+            this.numCusto.Size = new System.Drawing.Size(160, 22);
             this.numCusto.TabIndex = 57;
             // 
             // lblCusto
             // 
             this.lblCusto.AutoSize = true;
             this.lblCusto.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCusto.Location = new System.Drawing.Point(77, 298);
+            this.lblCusto.Location = new System.Drawing.Point(103, 367);
+            this.lblCusto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCusto.Name = "lblCusto";
-            this.lblCusto.Size = new System.Drawing.Size(53, 18);
+            this.lblCusto.Size = new System.Drawing.Size(67, 23);
             this.lblCusto.TabIndex = 56;
             this.lblCusto.Text = "Custo:";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(910, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(145, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 58;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmCadastro_ingredientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.numCusto);
             this.Controls.Add(this.lblCusto);
             this.Controls.Add(this.numPreco);
@@ -270,11 +302,13 @@
             this.Controls.Add(this.txtDescricao);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSair);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmCadastro_ingredientes";
             this.Text = "Cadastro de Ingredientes";
             ((System.ComponentModel.ISupportInitialize)(this.numEstoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPreco)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numCusto)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,5 +334,6 @@
         private System.Windows.Forms.Label lblPreco;
         private System.Windows.Forms.NumericUpDown numCusto;
         private System.Windows.Forms.Label lblCusto;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

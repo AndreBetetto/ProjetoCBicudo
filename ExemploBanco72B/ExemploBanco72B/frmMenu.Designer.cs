@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnCad_user = new System.Windows.Forms.Button();
             this.btnCad_Ingre = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnScripts = new System.Windows.Forms.Button();
             this.btnUsers = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnLogout
             // 
             this.btnLogout.Location = new System.Drawing.Point(400, 118);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(100, 28);
             this.btnLogout.TabIndex = 0;
@@ -50,7 +53,7 @@
             // btnCad_user
             // 
             this.btnCad_user.Location = new System.Drawing.Point(16, 129);
-            this.btnCad_user.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCad_user.Margin = new System.Windows.Forms.Padding(4);
             this.btnCad_user.Name = "btnCad_user";
             this.btnCad_user.Size = new System.Drawing.Size(272, 28);
             this.btnCad_user.TabIndex = 1;
@@ -61,7 +64,7 @@
             // btnCad_Ingre
             // 
             this.btnCad_Ingre.Location = new System.Drawing.Point(16, 94);
-            this.btnCad_Ingre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCad_Ingre.Margin = new System.Windows.Forms.Padding(4);
             this.btnCad_Ingre.Name = "btnCad_Ingre";
             this.btnCad_Ingre.Size = new System.Drawing.Size(272, 28);
             this.btnCad_Ingre.TabIndex = 2;
@@ -82,8 +85,8 @@
             // 
             // btnScripts
             // 
-            this.btnScripts.Location = new System.Drawing.Point(661, 15);
-            this.btnScripts.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnScripts.Location = new System.Drawing.Point(622, 93);
+            this.btnScripts.Margin = new System.Windows.Forms.Padding(4);
             this.btnScripts.Name = "btnScripts";
             this.btnScripts.Size = new System.Drawing.Size(272, 28);
             this.btnScripts.TabIndex = 4;
@@ -93,7 +96,7 @@
             // 
             // btnUsers
             // 
-            this.btnUsers.Location = new System.Drawing.Point(661, 51);
+            this.btnUsers.Location = new System.Drawing.Point(622, 129);
             this.btnUsers.Margin = new System.Windows.Forms.Padding(4);
             this.btnUsers.Name = "btnUsers";
             this.btnUsers.Size = new System.Drawing.Size(272, 28);
@@ -102,22 +105,34 @@
             this.btnUsers.UseVisualStyleBackColor = true;
             this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(910, 11);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(145, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 59;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 177);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnUsers);
             this.Controls.Add(this.btnScripts);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCad_Ingre);
             this.Controls.Add(this.btnCad_user);
             this.Controls.Add(this.btnLogout);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lanchonete da Nome - Menu";
             this.Load += new System.EventHandler(this.frmMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -130,5 +145,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnScripts;
         private System.Windows.Forms.Button btnUsers;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
