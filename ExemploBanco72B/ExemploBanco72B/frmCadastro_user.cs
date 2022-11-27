@@ -47,7 +47,7 @@ namespace ExemploBanco72B
                     txtNone.Focus();
                     return;
                 }
-                 sql = "insert into lanchonete_usuario (cpf, email, nome, datanasc, cep, telefone, senha, adm) " + "values (@cpf, @email, @nome, current_timestamp, @cep, @telefone, @senha, TRUE)";                 
+                 sql = "insert into lanchonete_usuario (cpf, email, nome, datanasc, cep, telefone, senha, adm) " + "values (@cpf, @email, @nome, current_timestamp, @cep, @telefone, @senha, @adm)";                 
                
 
 
@@ -60,9 +60,9 @@ namespace ExemploBanco72B
                 cmd.Parameters.AddWithValue("@telefone", txtTelefone.Text);
                 cmd.Parameters.AddWithValue("@senha", txtSenha.Text);
                 if (radAdmsim.Checked == true)
-                    cmd.Parameters.AddWithValue("@adm", "TRUE");
+                    cmd.Parameters.AddWithValue("@adm", true);
                 else
-                    cmd.Parameters.AddWithValue("@adm", "FALSE");
+                    cmd.Parameters.AddWithValue("@adm", false);
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Os dados do fabricante foram salvos com sucesso",
                         "Cadastro do fabricante", MessageBoxButtons.OK, MessageBoxIcon.Information);

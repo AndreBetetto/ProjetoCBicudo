@@ -74,9 +74,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(16, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 13);
+            this.label1.Size = new System.Drawing.Size(87, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Fazer pedido";
             // 
@@ -87,9 +88,11 @@
             this.groupBox1.Controls.Add(this.radLanche1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboLanche);
-            this.groupBox1.Location = new System.Drawing.Point(27, 57);
+            this.groupBox1.Location = new System.Drawing.Point(36, 70);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(265, 450);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(353, 554);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lanche";
@@ -109,18 +112,21 @@
             this.groupBox2.Controls.Add(this.comboPro);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.comboPao);
-            this.groupBox2.Location = new System.Drawing.Point(12, 164);
+            this.groupBox2.Location = new System.Drawing.Point(16, 202);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(240, 269);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(320, 331);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Monte seu lanche personalizado";
             // 
             // btnMontar
             // 
-            this.btnMontar.Location = new System.Drawing.Point(6, 240);
+            this.btnMontar.Location = new System.Drawing.Point(8, 295);
+            this.btnMontar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMontar.Name = "btnMontar";
-            this.btnMontar.Size = new System.Drawing.Size(220, 23);
+            this.btnMontar.Size = new System.Drawing.Size(293, 28);
             this.btnMontar.TabIndex = 3;
             this.btnMontar.Text = "Adicionar à lista de lanches";
             this.btnMontar.UseVisualStyleBackColor = true;
@@ -129,34 +135,38 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 26);
+            this.label8.Location = new System.Drawing.Point(8, 32);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(137, 13);
+            this.label8.Size = new System.Drawing.Size(170, 16);
             this.label8.TabIndex = 10;
             this.label8.Text = "De um nome ao seu lanche";
             // 
             // txtNomelanche
             // 
-            this.txtNomelanche.Location = new System.Drawing.Point(9, 42);
+            this.txtNomelanche.Location = new System.Drawing.Point(12, 52);
+            this.txtNomelanche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNomelanche.Name = "txtNomelanche";
-            this.txtNomelanche.Size = new System.Drawing.Size(225, 20);
+            this.txtNomelanche.Size = new System.Drawing.Size(299, 22);
             this.txtNomelanche.TabIndex = 3;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 213);
+            this.label7.Location = new System.Drawing.Point(8, 262);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(85, 13);
+            this.label7.Size = new System.Drawing.Size(107, 16);
             this.label7.TabIndex = 7;
             this.label7.Text = "Escolha o molho";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 186);
+            this.label6.Location = new System.Drawing.Point(8, 229);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 13);
+            this.label6.Size = new System.Drawing.Size(112, 16);
             this.label6.TabIndex = 9;
             this.label6.Text = "Escolha a salada";
             // 
@@ -164,26 +174,29 @@
             // 
             this.comboMol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMol.FormattingEnabled = true;
-            this.comboMol.Location = new System.Drawing.Point(105, 210);
+            this.comboMol.Location = new System.Drawing.Point(140, 258);
+            this.comboMol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboMol.Name = "comboMol";
-            this.comboMol.Size = new System.Drawing.Size(121, 21);
+            this.comboMol.Size = new System.Drawing.Size(160, 24);
             this.comboMol.TabIndex = 6;
             // 
             // comboSal
             // 
             this.comboSal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboSal.FormattingEnabled = true;
-            this.comboSal.Location = new System.Drawing.Point(105, 183);
+            this.comboSal.Location = new System.Drawing.Point(140, 225);
+            this.comboSal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboSal.Name = "comboSal";
-            this.comboSal.Size = new System.Drawing.Size(121, 21);
+            this.comboSal.Size = new System.Drawing.Size(160, 24);
             this.comboSal.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 159);
+            this.label5.Location = new System.Drawing.Point(8, 196);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 13);
+            this.label5.Size = new System.Drawing.Size(115, 16);
             this.label5.TabIndex = 7;
             this.label5.Text = "Escolha o laticínio";
             // 
@@ -191,17 +204,19 @@
             // 
             this.comboLat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLat.FormattingEnabled = true;
-            this.comboLat.Location = new System.Drawing.Point(105, 156);
+            this.comboLat.Location = new System.Drawing.Point(140, 192);
+            this.comboLat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboLat.Name = "comboLat";
-            this.comboLat.Size = new System.Drawing.Size(121, 21);
+            this.comboLat.Size = new System.Drawing.Size(160, 24);
             this.comboLat.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 130);
+            this.label4.Location = new System.Drawing.Point(8, 160);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(97, 13);
+            this.label4.Size = new System.Drawing.Size(119, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Escolha a proteína";
             // 
@@ -209,17 +224,19 @@
             // 
             this.comboPro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboPro.FormattingEnabled = true;
-            this.comboPro.Location = new System.Drawing.Point(105, 127);
+            this.comboPro.Location = new System.Drawing.Point(140, 156);
+            this.comboPro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboPro.Name = "comboPro";
-            this.comboPro.Size = new System.Drawing.Size(121, 21);
+            this.comboPro.Size = new System.Drawing.Size(160, 24);
             this.comboPro.TabIndex = 4;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 103);
+            this.label3.Location = new System.Drawing.Point(8, 127);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 13);
+            this.label3.Size = new System.Drawing.Size(94, 16);
             this.label3.TabIndex = 3;
             this.label3.Text = "Escolha o pão";
             // 
@@ -227,17 +244,19 @@
             // 
             this.comboPao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboPao.FormattingEnabled = true;
-            this.comboPao.Location = new System.Drawing.Point(105, 100);
+            this.comboPao.Location = new System.Drawing.Point(140, 123);
+            this.comboPao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboPao.Name = "comboPao";
-            this.comboPao.Size = new System.Drawing.Size(121, 21);
+            this.comboPao.Size = new System.Drawing.Size(160, 24);
             this.comboPao.TabIndex = 1;
             // 
             // radLanche2
             // 
             this.radLanche2.AutoSize = true;
-            this.radLanche2.Location = new System.Drawing.Point(11, 43);
+            this.radLanche2.Location = new System.Drawing.Point(15, 53);
+            this.radLanche2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radLanche2.Name = "radLanche2";
-            this.radLanche2.Size = new System.Drawing.Size(118, 17);
+            this.radLanche2.Size = new System.Drawing.Size(145, 20);
             this.radLanche2.TabIndex = 4;
             this.radLanche2.Text = "Escolher um lanche";
             this.radLanche2.UseVisualStyleBackColor = true;
@@ -247,9 +266,10 @@
             // 
             this.radLanche1.AutoSize = true;
             this.radLanche1.Checked = true;
-            this.radLanche1.Location = new System.Drawing.Point(11, 20);
+            this.radLanche1.Location = new System.Drawing.Point(15, 25);
+            this.radLanche1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radLanche1.Name = "radLanche1";
-            this.radLanche1.Size = new System.Drawing.Size(81, 17);
+            this.radLanche1.Size = new System.Drawing.Size(99, 20);
             this.radLanche1.TabIndex = 3;
             this.radLanche1.TabStop = true;
             this.radLanche1.Text = "Sem lanche";
@@ -259,9 +279,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 104);
+            this.label2.Location = new System.Drawing.Point(11, 128);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.Size = new System.Drawing.Size(132, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Selecione um lanche";
             // 
@@ -270,9 +291,10 @@
             this.comboLanche.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLanche.Enabled = false;
             this.comboLanche.FormattingEnabled = true;
-            this.comboLanche.Location = new System.Drawing.Point(11, 120);
+            this.comboLanche.Location = new System.Drawing.Point(15, 148);
+            this.comboLanche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboLanche.Name = "comboLanche";
-            this.comboLanche.Size = new System.Drawing.Size(121, 21);
+            this.comboLanche.Size = new System.Drawing.Size(160, 24);
             this.comboLanche.TabIndex = 0;
             // 
             // groupBox3
@@ -281,9 +303,11 @@
             this.groupBox3.Controls.Add(this.comboAcom);
             this.groupBox3.Controls.Add(this.radAcom2);
             this.groupBox3.Controls.Add(this.radAcom1);
-            this.groupBox3.Location = new System.Drawing.Point(298, 57);
+            this.groupBox3.Location = new System.Drawing.Point(397, 70);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(265, 226);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Size = new System.Drawing.Size(353, 278);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Acompanhamento";
@@ -291,9 +315,10 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 104);
+            this.label9.Location = new System.Drawing.Point(8, 128);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(159, 13);
+            this.label9.Size = new System.Drawing.Size(201, 16);
             this.label9.TabIndex = 8;
             this.label9.Text = "Selecione um acompanhamento";
             // 
@@ -302,17 +327,19 @@
             this.comboAcom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboAcom.Enabled = false;
             this.comboAcom.FormattingEnabled = true;
-            this.comboAcom.Location = new System.Drawing.Point(9, 120);
+            this.comboAcom.Location = new System.Drawing.Point(12, 148);
+            this.comboAcom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboAcom.Name = "comboAcom";
-            this.comboAcom.Size = new System.Drawing.Size(121, 21);
+            this.comboAcom.Size = new System.Drawing.Size(160, 24);
             this.comboAcom.TabIndex = 7;
             // 
             // radAcom2
             // 
             this.radAcom2.AutoSize = true;
-            this.radAcom2.Location = new System.Drawing.Point(6, 43);
+            this.radAcom2.Location = new System.Drawing.Point(8, 53);
+            this.radAcom2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radAcom2.Name = "radAcom2";
-            this.radAcom2.Size = new System.Drawing.Size(171, 17);
+            this.radAcom2.Size = new System.Drawing.Size(214, 20);
             this.radAcom2.TabIndex = 6;
             this.radAcom2.Text = "Escolher um acompanhamento";
             this.radAcom2.UseVisualStyleBackColor = true;
@@ -322,9 +349,10 @@
             // 
             this.radAcom1.AutoSize = true;
             this.radAcom1.Checked = true;
-            this.radAcom1.Location = new System.Drawing.Point(6, 20);
+            this.radAcom1.Location = new System.Drawing.Point(8, 25);
+            this.radAcom1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radAcom1.Name = "radAcom1";
-            this.radAcom1.Size = new System.Drawing.Size(134, 17);
+            this.radAcom1.Size = new System.Drawing.Size(168, 20);
             this.radAcom1.TabIndex = 5;
             this.radAcom1.TabStop = true;
             this.radAcom1.Text = "Sem acompanhamento";
@@ -337,9 +365,11 @@
             this.groupBox4.Controls.Add(this.comboSobre);
             this.groupBox4.Controls.Add(this.radSobre2);
             this.groupBox4.Controls.Add(this.radSobre1);
-            this.groupBox4.Location = new System.Drawing.Point(569, 57);
+            this.groupBox4.Location = new System.Drawing.Point(759, 70);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(265, 226);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Size = new System.Drawing.Size(353, 278);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Sobremesa";
@@ -347,9 +377,10 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 104);
+            this.label10.Location = new System.Drawing.Point(8, 128);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(245, 13);
+            this.label10.Size = new System.Drawing.Size(319, 16);
             this.label10.TabIndex = 10;
             this.label10.Text = "Selecione uma das nossas delicaosas sobremesas";
             // 
@@ -358,17 +389,19 @@
             this.comboSobre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboSobre.Enabled = false;
             this.comboSobre.FormattingEnabled = true;
-            this.comboSobre.Location = new System.Drawing.Point(9, 120);
+            this.comboSobre.Location = new System.Drawing.Point(12, 148);
+            this.comboSobre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboSobre.Name = "comboSobre";
-            this.comboSobre.Size = new System.Drawing.Size(121, 21);
+            this.comboSobre.Size = new System.Drawing.Size(160, 24);
             this.comboSobre.TabIndex = 9;
             // 
             // radSobre2
             // 
             this.radSobre2.AutoSize = true;
-            this.radSobre2.Location = new System.Drawing.Point(6, 43);
+            this.radSobre2.Location = new System.Drawing.Point(8, 53);
+            this.radSobre2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radSobre2.Name = "radSobre2";
-            this.radSobre2.Size = new System.Drawing.Size(143, 17);
+            this.radSobre2.Size = new System.Drawing.Size(182, 20);
             this.radSobre2.TabIndex = 8;
             this.radSobre2.Text = "Escolher uma sobremesa";
             this.radSobre2.UseVisualStyleBackColor = true;
@@ -378,9 +411,10 @@
             // 
             this.radSobre1.AutoSize = true;
             this.radSobre1.Checked = true;
-            this.radSobre1.Location = new System.Drawing.Point(6, 20);
+            this.radSobre1.Location = new System.Drawing.Point(8, 25);
+            this.radSobre1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radSobre1.Name = "radSobre1";
-            this.radSobre1.Size = new System.Drawing.Size(100, 17);
+            this.radSobre1.Size = new System.Drawing.Size(128, 20);
             this.radSobre1.TabIndex = 7;
             this.radSobre1.TabStop = true;
             this.radSobre1.Text = "Sem sobremesa";
@@ -389,9 +423,10 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(530, 397);
+            this.btnExcluir.Location = new System.Drawing.Point(707, 489);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(111, 23);
+            this.btnExcluir.Size = new System.Drawing.Size(148, 28);
             this.btnExcluir.TabIndex = 5;
             this.btnExcluir.Text = "Excluir pedido";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -399,19 +434,22 @@
             // 
             // btnLogout
             // 
-            this.btnLogout.Location = new System.Drawing.Point(352, 397);
+            this.btnLogout.Location = new System.Drawing.Point(469, 489);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(111, 23);
+            this.btnLogout.Size = new System.Drawing.Size(148, 28);
             this.btnLogout.TabIndex = 6;
             this.btnLogout.Text = "Logout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // btnFinalizar
             // 
             this.btnFinalizar.Enabled = false;
-            this.btnFinalizar.Location = new System.Drawing.Point(723, 397);
+            this.btnFinalizar.Location = new System.Drawing.Point(964, 489);
+            this.btnFinalizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFinalizar.Name = "btnFinalizar";
-            this.btnFinalizar.Size = new System.Drawing.Size(111, 23);
+            this.btnFinalizar.Size = new System.Drawing.Size(148, 28);
             this.btnFinalizar.TabIndex = 7;
             this.btnFinalizar.Text = "Finalizar pedido";
             this.btnFinalizar.UseVisualStyleBackColor = true;
@@ -420,26 +458,30 @@
             // dgvPesquisa
             // 
             this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPesquisa.Location = new System.Drawing.Point(298, 289);
+            this.dgvPesquisa.Location = new System.Drawing.Point(397, 356);
+            this.dgvPesquisa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvPesquisa.Name = "dgvPesquisa";
-            this.dgvPesquisa.Size = new System.Drawing.Size(19, 136);
+            this.dgvPesquisa.RowHeadersWidth = 51;
+            this.dgvPesquisa.Size = new System.Drawing.Size(25, 167);
             this.dgvPesquisa.TabIndex = 8;
             this.dgvPesquisa.Visible = false;
             // 
             // dgvPesquisa2
             // 
             this.dgvPesquisa2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPesquisa2.Location = new System.Drawing.Point(299, 431);
+            this.dgvPesquisa2.Location = new System.Drawing.Point(399, 530);
+            this.dgvPesquisa2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvPesquisa2.Name = "dgvPesquisa2";
-            this.dgvPesquisa2.Size = new System.Drawing.Size(18, 76);
+            this.dgvPesquisa2.RowHeadersWidth = 51;
+            this.dgvPesquisa2.Size = new System.Drawing.Size(24, 94);
             this.dgvPesquisa2.TabIndex = 9;
             this.dgvPesquisa2.Visible = false;
             // 
             // Lanches
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 519);
+            this.ClientSize = new System.Drawing.Size(1133, 639);
             this.Controls.Add(this.dgvPesquisa2);
             this.Controls.Add(this.dgvPesquisa);
             this.Controls.Add(this.btnFinalizar);
@@ -449,6 +491,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Lanches";
             this.Text = "Pedido";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lanches_FormClosing);

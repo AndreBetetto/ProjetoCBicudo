@@ -433,5 +433,12 @@ namespace ExemploBanco72B
             radAcom1.Checked = true;
             radSobre1.Checked = true;
         }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Visible = false;
+            frmLogin splash = new frmLogin();
+            splash.ShowDialog();
+        }
     }
 }

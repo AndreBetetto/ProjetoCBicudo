@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace ExemploBanco72B
 {
     public partial class frmMenu : Form
     {
+        
         public frmMenu()
         {
             InitializeComponent();
@@ -22,8 +24,8 @@ namespace ExemploBanco72B
             this.Visible = false;
             frmSplash splash = new frmSplash();
             splash.ShowDialog();
-            frmLogin login = new frmLogin();   
-            login.ShowDialog();
+            //frmLogin login = new frmLogin();   
+            //login.ShowDialog();
             this.Visible=true;
         }
 
