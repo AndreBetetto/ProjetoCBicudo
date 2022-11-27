@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Lanches));
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -63,12 +64,14 @@
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.dgvPesquisa = new System.Windows.Forms.DataGridView();
             this.dgvPesquisa2 = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,9 +92,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.comboLanche);
             this.groupBox1.Location = new System.Drawing.Point(36, 70);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(353, 554);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -113,9 +116,9 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.comboPao);
             this.groupBox2.Location = new System.Drawing.Point(16, 202);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(320, 331);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
@@ -124,7 +127,7 @@
             // btnMontar
             // 
             this.btnMontar.Location = new System.Drawing.Point(8, 295);
-            this.btnMontar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMontar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMontar.Name = "btnMontar";
             this.btnMontar.Size = new System.Drawing.Size(293, 28);
             this.btnMontar.TabIndex = 3;
@@ -145,7 +148,7 @@
             // txtNomelanche
             // 
             this.txtNomelanche.Location = new System.Drawing.Point(12, 52);
-            this.txtNomelanche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNomelanche.Margin = new System.Windows.Forms.Padding(4);
             this.txtNomelanche.Name = "txtNomelanche";
             this.txtNomelanche.Size = new System.Drawing.Size(299, 22);
             this.txtNomelanche.TabIndex = 3;
@@ -175,7 +178,7 @@
             this.comboMol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboMol.FormattingEnabled = true;
             this.comboMol.Location = new System.Drawing.Point(140, 258);
-            this.comboMol.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboMol.Margin = new System.Windows.Forms.Padding(4);
             this.comboMol.Name = "comboMol";
             this.comboMol.Size = new System.Drawing.Size(160, 24);
             this.comboMol.TabIndex = 6;
@@ -185,7 +188,7 @@
             this.comboSal.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboSal.FormattingEnabled = true;
             this.comboSal.Location = new System.Drawing.Point(140, 225);
-            this.comboSal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboSal.Margin = new System.Windows.Forms.Padding(4);
             this.comboSal.Name = "comboSal";
             this.comboSal.Size = new System.Drawing.Size(160, 24);
             this.comboSal.TabIndex = 8;
@@ -205,7 +208,7 @@
             this.comboLat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboLat.FormattingEnabled = true;
             this.comboLat.Location = new System.Drawing.Point(140, 192);
-            this.comboLat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboLat.Margin = new System.Windows.Forms.Padding(4);
             this.comboLat.Name = "comboLat";
             this.comboLat.Size = new System.Drawing.Size(160, 24);
             this.comboLat.TabIndex = 6;
@@ -225,7 +228,7 @@
             this.comboPro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboPro.FormattingEnabled = true;
             this.comboPro.Location = new System.Drawing.Point(140, 156);
-            this.comboPro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboPro.Margin = new System.Windows.Forms.Padding(4);
             this.comboPro.Name = "comboPro";
             this.comboPro.Size = new System.Drawing.Size(160, 24);
             this.comboPro.TabIndex = 4;
@@ -245,7 +248,7 @@
             this.comboPao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboPao.FormattingEnabled = true;
             this.comboPao.Location = new System.Drawing.Point(140, 123);
-            this.comboPao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboPao.Margin = new System.Windows.Forms.Padding(4);
             this.comboPao.Name = "comboPao";
             this.comboPao.Size = new System.Drawing.Size(160, 24);
             this.comboPao.TabIndex = 1;
@@ -254,7 +257,7 @@
             // 
             this.radLanche2.AutoSize = true;
             this.radLanche2.Location = new System.Drawing.Point(15, 53);
-            this.radLanche2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radLanche2.Margin = new System.Windows.Forms.Padding(4);
             this.radLanche2.Name = "radLanche2";
             this.radLanche2.Size = new System.Drawing.Size(145, 20);
             this.radLanche2.TabIndex = 4;
@@ -267,7 +270,7 @@
             this.radLanche1.AutoSize = true;
             this.radLanche1.Checked = true;
             this.radLanche1.Location = new System.Drawing.Point(15, 25);
-            this.radLanche1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radLanche1.Margin = new System.Windows.Forms.Padding(4);
             this.radLanche1.Name = "radLanche1";
             this.radLanche1.Size = new System.Drawing.Size(99, 20);
             this.radLanche1.TabIndex = 3;
@@ -292,7 +295,7 @@
             this.comboLanche.Enabled = false;
             this.comboLanche.FormattingEnabled = true;
             this.comboLanche.Location = new System.Drawing.Point(15, 148);
-            this.comboLanche.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboLanche.Margin = new System.Windows.Forms.Padding(4);
             this.comboLanche.Name = "comboLanche";
             this.comboLanche.Size = new System.Drawing.Size(160, 24);
             this.comboLanche.TabIndex = 0;
@@ -304,9 +307,9 @@
             this.groupBox3.Controls.Add(this.radAcom2);
             this.groupBox3.Controls.Add(this.radAcom1);
             this.groupBox3.Location = new System.Drawing.Point(397, 70);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(353, 278);
             this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
@@ -328,7 +331,7 @@
             this.comboAcom.Enabled = false;
             this.comboAcom.FormattingEnabled = true;
             this.comboAcom.Location = new System.Drawing.Point(12, 148);
-            this.comboAcom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboAcom.Margin = new System.Windows.Forms.Padding(4);
             this.comboAcom.Name = "comboAcom";
             this.comboAcom.Size = new System.Drawing.Size(160, 24);
             this.comboAcom.TabIndex = 7;
@@ -337,7 +340,7 @@
             // 
             this.radAcom2.AutoSize = true;
             this.radAcom2.Location = new System.Drawing.Point(8, 53);
-            this.radAcom2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radAcom2.Margin = new System.Windows.Forms.Padding(4);
             this.radAcom2.Name = "radAcom2";
             this.radAcom2.Size = new System.Drawing.Size(214, 20);
             this.radAcom2.TabIndex = 6;
@@ -350,7 +353,7 @@
             this.radAcom1.AutoSize = true;
             this.radAcom1.Checked = true;
             this.radAcom1.Location = new System.Drawing.Point(8, 25);
-            this.radAcom1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radAcom1.Margin = new System.Windows.Forms.Padding(4);
             this.radAcom1.Name = "radAcom1";
             this.radAcom1.Size = new System.Drawing.Size(168, 20);
             this.radAcom1.TabIndex = 5;
@@ -366,9 +369,9 @@
             this.groupBox4.Controls.Add(this.radSobre2);
             this.groupBox4.Controls.Add(this.radSobre1);
             this.groupBox4.Location = new System.Drawing.Point(759, 70);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox4.Size = new System.Drawing.Size(353, 278);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
@@ -390,7 +393,7 @@
             this.comboSobre.Enabled = false;
             this.comboSobre.FormattingEnabled = true;
             this.comboSobre.Location = new System.Drawing.Point(12, 148);
-            this.comboSobre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboSobre.Margin = new System.Windows.Forms.Padding(4);
             this.comboSobre.Name = "comboSobre";
             this.comboSobre.Size = new System.Drawing.Size(160, 24);
             this.comboSobre.TabIndex = 9;
@@ -399,7 +402,7 @@
             // 
             this.radSobre2.AutoSize = true;
             this.radSobre2.Location = new System.Drawing.Point(8, 53);
-            this.radSobre2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radSobre2.Margin = new System.Windows.Forms.Padding(4);
             this.radSobre2.Name = "radSobre2";
             this.radSobre2.Size = new System.Drawing.Size(182, 20);
             this.radSobre2.TabIndex = 8;
@@ -412,7 +415,7 @@
             this.radSobre1.AutoSize = true;
             this.radSobre1.Checked = true;
             this.radSobre1.Location = new System.Drawing.Point(8, 25);
-            this.radSobre1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radSobre1.Margin = new System.Windows.Forms.Padding(4);
             this.radSobre1.Name = "radSobre1";
             this.radSobre1.Size = new System.Drawing.Size(128, 20);
             this.radSobre1.TabIndex = 7;
@@ -424,7 +427,7 @@
             // btnExcluir
             // 
             this.btnExcluir.Location = new System.Drawing.Point(707, 489);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(148, 28);
             this.btnExcluir.TabIndex = 5;
@@ -435,7 +438,7 @@
             // btnLogout
             // 
             this.btnLogout.Location = new System.Drawing.Point(469, 489);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(148, 28);
             this.btnLogout.TabIndex = 6;
@@ -447,7 +450,7 @@
             // 
             this.btnFinalizar.Enabled = false;
             this.btnFinalizar.Location = new System.Drawing.Point(964, 489);
-            this.btnFinalizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFinalizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnFinalizar.Name = "btnFinalizar";
             this.btnFinalizar.Size = new System.Drawing.Size(148, 28);
             this.btnFinalizar.TabIndex = 7;
@@ -459,7 +462,7 @@
             // 
             this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPesquisa.Location = new System.Drawing.Point(397, 356);
-            this.dgvPesquisa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPesquisa.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPesquisa.Name = "dgvPesquisa";
             this.dgvPesquisa.RowHeadersWidth = 51;
             this.dgvPesquisa.Size = new System.Drawing.Size(25, 167);
@@ -470,18 +473,29 @@
             // 
             this.dgvPesquisa2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPesquisa2.Location = new System.Drawing.Point(399, 530);
-            this.dgvPesquisa2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPesquisa2.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPesquisa2.Name = "dgvPesquisa2";
             this.dgvPesquisa2.RowHeadersWidth = 51;
             this.dgvPesquisa2.Size = new System.Drawing.Size(24, 94);
             this.dgvPesquisa2.TabIndex = 9;
             this.dgvPesquisa2.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(964, 547);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(145, 80);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 59;
+            this.pictureBox1.TabStop = false;
+            // 
             // Lanches
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1133, 639);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvPesquisa2);
             this.Controls.Add(this.dgvPesquisa);
             this.Controls.Add(this.btnFinalizar);
@@ -491,7 +505,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Lanches";
             this.Text = "Pedido";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Lanches_FormClosing);
@@ -506,6 +520,7 @@
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -547,5 +562,6 @@
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.DataGridView dgvPesquisa;
         private System.Windows.Forms.DataGridView dgvPesquisa2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
